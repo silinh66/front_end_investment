@@ -112,7 +112,6 @@ export const TVChartContainer: FC<any> = ({
   }, [curTab?.SignalInfo, curTab?.symbol, curTab?.resolution]);
 
   useEffect(() => {
-    // console.log("curTab?.forceChange: ", curTab?.forceChange);
     // curTabRef.current = curTab;
     // console.log('curTabRef.current: ', curTabRef.current);
     // setCurTab((prevCurTab: any) => {
@@ -401,14 +400,26 @@ export const TVChartContainer: FC<any> = ({
         if (id?.originalUndoText !== 'change symbol') {
           tvWidget.save((obj) => {
             const listSource = obj?.charts[0]?.panes[0]?.sources;
-            const trendingLine = listSource?.filter((item) => {
+            let curMainSeries = listSource?.find(
+              (item) => item?.type === 'MainSeries'
+            );
+            let curSymbol = curMainSeries?.state?.symbol;
+            let trendingLine = listSource.filter((item) => {
               return (
                 (item.type === 'LineToolTrendLine' &&
-                  //symbol = curTab?.symbol
-                  item.state.symbol === curTab?.symbol) ||
-                item.state.symbol === `HOSE:${curTab?.symbol}`
+                  //symbol = latestCurTab?.symbol
+                  item.state.symbol === curSymbol) ||
+                item.state.symbol === `HOSE:${curSymbol}`
               );
             });
+            // const trendingLine = listSource?.filter((item) => {
+            //   return (
+            //     (item.type === 'LineToolTrendLine' &&
+            //       //symbol = curTab?.symbol
+            //       item.state.symbol === curTab?.symbol) ||
+            //     item.state.symbol === `HOSE:${curTab?.symbol}`
+            //   );
+            // });
             // trendingLine = trendingLine?.map((item) => {
             //   return {
             //     ...item,
@@ -445,12 +456,16 @@ export const TVChartContainer: FC<any> = ({
             const chartJson = JSON.stringify(obj);
             localStorage.setItem('myChartDataFilter', chartJson);
             const listSource = obj?.charts[0]?.panes[0]?.sources;
+            let curMainSeries = listSource?.find(
+              (item) => item?.type === 'MainSeries'
+            );
+            let curSymbol = curMainSeries?.state?.symbol;
             let trendingLine = listSource.filter((item) => {
               return (
                 (item.type === 'LineToolTrendLine' &&
                   //symbol = latestCurTab?.symbol
-                  item.state.symbol === curTab?.symbol) ||
-                item.state.symbol === `HOSE:${curTab?.symbol}`
+                  item.state.symbol === curSymbol) ||
+                item.state.symbol === `HOSE:${curSymbol}`
               );
             });
             trendingLine = trendingLine?.map((item) => {

@@ -3105,75 +3105,75 @@ const HangHoa: FC = ({
                     width: '153px',
                     color: screenMode === 'dark' ? '#818498' : '#66676B',
                   }}
-                  title={
-                    <div
-                      style={{
-                        // height: '400px',
-                        // overflow: 'scroll',
-                        backgroundColor:
-                          screenMode === 'dark' ? '#25262D' : '#FDFDFD',
-                        padding: 0,
-                        margin: 0,
-                        scrollbarColor: 'rgba(42, 46, 57, 1) #25262D',
-                        scrollbarWidth: 'thin',
-                        border: '1px solid rgb(25, 127, 191, 0.18)',
-                        borderRadius: '20px',
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: 'flex',
-                          justifyContent: ' center',
-                          fontWeight: '600',
-                          padding: '8px',
-                          color: screenMode === 'dark' ? '#fff' : 'black',
-                        }}
-                      >
-                        VÙNG 1
-                      </div>
-                      <div
-                        style={{
-                          height: '400px',
-                          overflow: 'scroll',
-                          // backgroundColor: '#25262D',
-                          // padding: 0,
-                          // margin: 0,
-                          scrollbarColor:
-                            screenMode === 'light'
-                              ? '#c8c8c8 #d5d5d5'
-                              : 'rgba(42, 46, 57, 1) #1f232c',
-                          scrollbarWidth: 'thin',
-                          // border: '1px solid rgb(25, 127, 191, 0.18)',
-                          // borderRadius: '20px',
-                        }}
-                      >
-                        {LIST_XANG_VUNG_1.map((item: any, index: number) => {
-                          return (
-                            <div
-                              key={index}
-                              style={{
-                                color: screenMode === 'dark' ? '#fff' : 'black',
+                  // title={
+                  //   <div
+                  //     style={{
+                  //       // height: '400px',
+                  //       // overflow: 'scroll',
+                  //       backgroundColor:
+                  //         screenMode === 'dark' ? '#25262D' : '#FDFDFD',
+                  //       padding: 0,
+                  //       margin: 0,
+                  //       scrollbarColor: 'rgba(42, 46, 57, 1) #25262D',
+                  //       scrollbarWidth: 'thin',
+                  //       border: '1px solid rgb(25, 127, 191, 0.18)',
+                  //       borderRadius: '20px',
+                  //     }}
+                  //   >
+                  //     <div
+                  //       style={{
+                  //         display: 'flex',
+                  //         justifyContent: ' center',
+                  //         fontWeight: '600',
+                  //         padding: '8px',
+                  //         color: screenMode === 'dark' ? '#fff' : 'black',
+                  //       }}
+                  //     >
+                  //       VÙNG 1
+                  //     </div>
+                  //     <div
+                  //       style={{
+                  //         height: '400px',
+                  //         overflow: 'scroll',
+                  //         // backgroundColor: '#25262D',
+                  //         // padding: 0,
+                  //         // margin: 0,
+                  //         scrollbarColor:
+                  //           screenMode === 'light'
+                  //             ? '#c8c8c8 #d5d5d5'
+                  //             : 'rgba(42, 46, 57, 1) #1f232c',
+                  //         scrollbarWidth: 'thin',
+                  //         // border: '1px solid rgb(25, 127, 191, 0.18)',
+                  //         // borderRadius: '20px',
+                  //       }}
+                  //     >
+                  //       {LIST_XANG_VUNG_1.map((item: any, index: number) => {
+                  //         return (
+                  //           <div
+                  //             key={index}
+                  //             style={{
+                  //               color: screenMode === 'dark' ? '#fff' : 'black',
 
-                                marginBottom: '4px',
-                                padding: '4px',
-                                borderRadius: '4px',
-                                backgroundColor:
-                                  index % 2 === 0
-                                    ? screenMode === 'dark'
-                                      ? '#25262D'
-                                      : '#F0F3FA'
-                                    : screenMode === 'dark'
-                                      ? '#2A2E39'
-                                      : '#FDFDFD',
-                              }}
-                            >
-                              {index + 1}. {item}
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  }
+                  //               marginBottom: '4px',
+                  //               padding: '4px',
+                  //               borderRadius: '4px',
+                  //               backgroundColor:
+                  //                 index % 2 === 0
+                  //                   ? screenMode === 'dark'
+                  //                     ? '#25262D'
+                  //                     : '#F0F3FA'
+                  //                   : screenMode === 'dark'
+                  //                     ? '#2A2E39'
+                  //                     : '#FDFDFD',
+                  //             }}
+                  //           >
+                  //             {index + 1}. {item}
+                  //           </div>
+                  //         );
+                  //       })}
+                  //     </div>
+                  //   </div>
+                  // }
                 >
                   <div
                     style={{
@@ -4821,784 +4821,784 @@ const HangHoa: FC = ({
                         backgroundColor: 'transparent', // Optional: remove background color if needed
                       }}
                       style={{ overflow: 'hidden' }}
-                      title={
-                        <div
-                          id="dhtmltooltip"
-                          style={{
-                            left: '-800px',
-                            top: '1659px',
-                            overflow: 'hidden',
-                            backgroundColor:
-                              screenMode === 'dark' ? '#25262D' : '#FFFFFF',
-                          }}
-                        >
-                          <div
-                            style={{
-                              width: '500px',
-                              overflow: 'hidden',
-                              padding: '16px',
-                              borderRadius: '3px',
-                            }}
-                          >
-                            <div
-                              style={{
-                                fontSize: '16px',
-                                fontFamily: 'Roboto Flex',
-                                fontWeight: '600',
-                                textAlign: 'center',
-                                color: '#FFFFFF',
-                              }}
-                            >
-                              Lịch sử biến động giá mua/bán{' '}
-                              {LIST_MAP_GOLD_NAME[item?.type_code]}
-                            </div>
-                            {listGiaVang
-                              ?.filter((itemHistory: any) => {
-                                return (
-                                  item?.type_code === itemHistory?.type_code
-                                );
-                              })
-                              ?.slice(1, 5)
-                              ?.map((itemHistory: any) => {
-                                const timeGold = moment
-                                  .unix(itemHistory?.update_time)
-                                  .format('HH:mm:ss');
-                              }) && (
-                              <HighchartsReact
-                                highcharts={Highcharts}
-                                options={{
-                                  chart: {
-                                    type: 'column',
-                                    backgroundColor:
-                                      screenMode === 'dark'
-                                        ? '#25262D'
-                                        : '#FDFDFD',
+                      // title={
+                      //   <div
+                      //     id="dhtmltooltip"
+                      //     style={{
+                      //       left: '-800px',
+                      //       top: '1659px',
+                      //       overflow: 'hidden',
+                      //       backgroundColor:
+                      //         screenMode === 'dark' ? '#25262D' : '#FFFFFF',
+                      //     }}
+                      //   >
+                      //     <div
+                      //       style={{
+                      //         width: '500px',
+                      //         overflow: 'hidden',
+                      //         padding: '16px',
+                      //         borderRadius: '3px',
+                      //       }}
+                      //     >
+                      //       <div
+                      //         style={{
+                      //           fontSize: '16px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           fontWeight: '600',
+                      //           textAlign: 'center',
+                      //           color: '#FFFFFF',
+                      //         }}
+                      //       >
+                      //         Lịch sử biến động giá mua/bán{' '}
+                      //         {LIST_MAP_GOLD_NAME[item?.type_code]}
+                      //       </div>
+                      //       {listGiaVang
+                      //         ?.filter((itemHistory: any) => {
+                      //           return (
+                      //             item?.type_code === itemHistory?.type_code
+                      //           );
+                      //         })
+                      //         ?.slice(1, 5)
+                      //         ?.map((itemHistory: any) => {
+                      //           const timeGold = moment
+                      //             .unix(itemHistory?.update_time)
+                      //             .format('HH:mm:ss');
+                      //         }) && (
+                      //         <HighchartsReact
+                      //           highcharts={Highcharts}
+                      //           options={{
+                      //             chart: {
+                      //               type: 'column',
+                      //               backgroundColor:
+                      //                 screenMode === 'dark'
+                      //                   ? '#25262D'
+                      //                   : '#FDFDFD',
 
-                                    style: {
-                                      color: '#fff',
-                                    },
-                                    borderRadius: 8,
-                                    width: 500,
-                                    marginTop: 40,
-                                    marginLeft: 70,
-                                    marginBottom: 107,
-                                    height: 308,
-                                  },
-                                  credits: {
-                                    enabled: false, // Loại bỏ chữ "Highcharts.com"
-                                  },
-                                  title: {
-                                    text: null,
-                                    style: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                  },
-                                  colors: [
-                                    '#B28221',
-                                    '#43F3FF',
-                                    '#597BF8',
-                                    '#30DF9D',
-                                    '#FF36F5',
-                                    '#FFD097',
-                                    '#EF5E76',
-                                    '#FFF92F',
-                                  ],
-                                  legend: {
-                                    align: 'left',
-                                    verticalAlign: 'bottom',
-                                    layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
-                                    itemStyle: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                    minHeight: 70,
-                                    maxWidth: 500,
-                                    y: 20,
+                      //               style: {
+                      //                 color: '#fff',
+                      //               },
+                      //               borderRadius: 8,
+                      //               width: 500,
+                      //               marginTop: 40,
+                      //               marginLeft: 70,
+                      //               marginBottom: 107,
+                      //               height: 308,
+                      //             },
+                      //             credits: {
+                      //               enabled: false, // Loại bỏ chữ "Highcharts.com"
+                      //             },
+                      //             title: {
+                      //               text: null,
+                      //               style: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //             },
+                      //             colors: [
+                      //               '#B28221',
+                      //               '#43F3FF',
+                      //               '#597BF8',
+                      //               '#30DF9D',
+                      //               '#FF36F5',
+                      //               '#FFD097',
+                      //               '#EF5E76',
+                      //               '#FFF92F',
+                      //             ],
+                      //             legend: {
+                      //               align: 'left',
+                      //               verticalAlign: 'bottom',
+                      //               layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
+                      //               itemStyle: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //               minHeight: 70,
+                      //               maxWidth: 500,
+                      //               y: 20,
 
-                                    navigation: {
-                                      verticalAlign: 'left',
-                                    },
-                                  },
-                                  plotOptions: {
-                                    column: {
-                                      stacking: 'normal',
-                                      dataLabels: {
-                                        enabled: false,
-                                      },
-                                      borderRadius: 0,
-                                      borderWidth: 0,
-                                    },
-                                  },
-                                  tooltip: {
-                                    formatter: function () {
-                                      let tooltipContent = `<b>${this.x}</b><br/>`;
+                      //               navigation: {
+                      //                 verticalAlign: 'left',
+                      //               },
+                      //             },
+                      //             plotOptions: {
+                      //               column: {
+                      //                 stacking: 'normal',
+                      //                 dataLabels: {
+                      //                   enabled: false,
+                      //                 },
+                      //                 borderRadius: 0,
+                      //                 borderWidth: 0,
+                      //               },
+                      //             },
+                      //             tooltip: {
+                      //               formatter: function () {
+                      //                 let tooltipContent = `<b>${this.x}</b><br/>`;
 
-                                      tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
+                      //                 tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
 
-                                      return tooltipContent;
-                                    },
-                                    useHTML: true,
-                                  },
-                                  xAxis: {
-                                    categories: listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)
-                                      ?.map((itemHistory: any) => {
-                                        return moment
-                                          .unix(itemHistory?.update_time)
-                                          .format('HH:mm:ss');
-                                      }),
-                                    labels: {
-                                      style: {
-                                        fontSize: 12,
-                                        fontFamily: 'Roboto Flex',
-                                        color:
-                                          screenMode === 'dark'
-                                            ? '#fff'
-                                            : 'black',
-                                      },
-                                    },
-                                    gridLineColor: '#323546',
-                                    gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
-                                    tickLength: 40,
-                                    lineColor: '#e6d8d8', // Màu của đường kẻ axis
+                      //                 return tooltipContent;
+                      //               },
+                      //               useHTML: true,
+                      //             },
+                      //             xAxis: {
+                      //               categories: listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)
+                      //                 ?.map((itemHistory: any) => {
+                      //                   return moment
+                      //                     .unix(itemHistory?.update_time)
+                      //                     .format('HH:mm:ss');
+                      //                 }),
+                      //               labels: {
+                      //                 style: {
+                      //                   fontSize: 12,
+                      //                   fontFamily: 'Roboto Flex',
+                      //                   color:
+                      //                     screenMode === 'dark'
+                      //                       ? '#fff'
+                      //                       : 'black',
+                      //                 },
+                      //               },
+                      //               gridLineColor: '#323546',
+                      //               gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
+                      //               tickLength: 40,
+                      //               lineColor: '#e6d8d8', // Màu của đường kẻ axis
 
-                                    lineWidth: 0,
-                                    tickWidth: 0,
+                      //               lineWidth: 0,
+                      //               tickWidth: 0,
 
-                                    gridLineWidth: 0,
-                                    crosshair: {
-                                      color: 'gray',
-                                      width: 1,
-                                      zIndex: 5,
-                                    },
-                                  },
-                                  yAxis: [
-                                    {
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      axisLabel: {
-                                        formatter: function (value: number) {
-                                          if (value > 1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value < -1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value === 0) return 0;
-                                        },
-                                      },
-                                      title: {
-                                        text: null, // Loại bỏ tiêu đề "Values" trên trục y
-                                      },
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      labels: {
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                    {
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      opposite: true, // this will put it on the right side
-                                      title: {
-                                        text: null, // you can set your title here
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                      labels: {
-                                        formatter: function () {
-                                          return this.value + '%';
-                                        },
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                  ],
-                                  grid: {
-                                    left: 80,
-                                    right: 250,
-                                    top: 100,
-                                    bottom: 100,
-                                  },
-                                  series: [
-                                    {
-                                      name: 'Giá mua',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.buy_avg;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                    {
-                                      name: 'Giá bán',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.sell;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                  ],
-                                }}
-                              />
-                            )}
+                      //               gridLineWidth: 0,
+                      //               crosshair: {
+                      //                 color: 'gray',
+                      //                 width: 1,
+                      //                 zIndex: 5,
+                      //               },
+                      //             },
+                      //             yAxis: [
+                      //               {
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 axisLabel: {
+                      //                   formatter: function (value: number) {
+                      //                     if (value > 1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value < -1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value === 0) return 0;
+                      //                   },
+                      //                 },
+                      //                 title: {
+                      //                   text: null, // Loại bỏ tiêu đề "Values" trên trục y
+                      //                 },
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //               {
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 opposite: true, // this will put it on the right side
+                      //                 title: {
+                      //                   text: null, // you can set your title here
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   formatter: function () {
+                      //                     return this.value + '%';
+                      //                   },
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //             ],
+                      //             grid: {
+                      //               left: 80,
+                      //               right: 250,
+                      //               top: 100,
+                      //               bottom: 100,
+                      //             },
+                      //             series: [
+                      //               {
+                      //                 name: 'Giá mua',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.buy_avg;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //               {
+                      //                 name: 'Giá bán',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.sell;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //             ],
+                      //           }}
+                      //         />
+                      //       )}
 
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                marginTop: '8px',
-                                borderBottom:
-                                  screenMode === 'dark'
-                                    ? '1px solid #30323B'
-                                    : '1px solid #D5D7DC',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '96px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                  paddingLeft: '12px',
-                                }}
-                              >
-                                {moment
-                                  .unix(
-                                    listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)[0]?.update_time
-                                  )
-                                  .format('DD/MM/YYYY')}
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#5CD680'
-                                      : '#45783A',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá mua
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           marginTop: '8px',
+                      //           borderBottom:
+                      //             screenMode === 'dark'
+                      //               ? '1px solid #30323B'
+                      //               : '1px solid #D5D7DC',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '96px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //         >
+                      //           {moment
+                      //             .unix(
+                      //               listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)[0]?.update_time
+                      //             )
+                      //             .format('DD/MM/YYYY')}
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#5CD680'
+                      //                 : '#45783A',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá mua
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#D15449'
-                                      : '#A33929',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá bán
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#D15449'
+                      //                 : '#A33929',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá bán
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderBottom:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                            </div>
-                            <div>
-                              {listGiaVang
-                                ?.filter((itemHistory: any) => {
-                                  return (
-                                    item?.type_code === itemHistory?.type_code
-                                  );
-                                })
-                                ?.slice(1, 5)
-                                ?.map((itemHistory: any, index: number) => {
-                                  return (
-                                    <div
-                                      key={index}
-                                      style={{
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        alignItems: 'center',
-                                        borderBottom:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                        borderRight:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                      }}
-                                    >
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '700',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          width: '96px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        <span
-                                          style={{
-                                            color: '#DDC230',
-                                          }}
-                                        >
-                                          {moment
-                                            .unix(itemHistory?.update_time)
-                                            .format('HH:mm:ss')}
-                                        </span>
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.buy)}
-                                        {itemHistory?.buy > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.alter_buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatNumber(itemHistory?.alter_buy)}
-                                        {itemHistory?.alter_buy > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.sell)}
-                                        {itemHistory?.sell > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
+                      //             borderBottom:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //       <div>
+                      //         {listGiaVang
+                      //           ?.filter((itemHistory: any) => {
+                      //             return (
+                      //               item?.type_code === itemHistory?.type_code
+                      //             );
+                      //           })
+                      //           ?.slice(1, 5)
+                      //           ?.map((itemHistory: any, index: number) => {
+                      //             return (
+                      //               <div
+                      //                 key={index}
+                      //                 style={{
+                      //                   display: 'flex',
+                      //                   flexDirection: 'row',
+                      //                   alignItems: 'center',
+                      //                   borderBottom:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                   borderRight:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                 }}
+                      //               >
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '700',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     width: '96px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   <span
+                      //                     style={{
+                      //                       color: '#DDC230',
+                      //                     }}
+                      //                   >
+                      //                     {moment
+                      //                       .unix(itemHistory?.update_time)
+                      //                       .format('HH:mm:ss')}
+                      //                   </span>
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.buy)}
+                      //                   {itemHistory?.buy > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.alter_buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatNumber(itemHistory?.alter_buy)}
+                      //                   {itemHistory?.alter_buy > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.sell)}
+                      //                   {itemHistory?.sell > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
 
-                                          color:
-                                            itemHistory?.alter_sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
+                      //                     color:
+                      //                       itemHistory?.alter_sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
 
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(
-                                          itemHistory?.alter_sell
-                                        )}
-                                        {itemHistory?.alter_sell > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                    </div>
-                                  );
-                                })}
-                            </div>
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(
+                      //                     itemHistory?.alter_sell
+                      //                   )}
+                      //                   {itemHistory?.alter_sell > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //               </div>
+                      //             );
+                      //           })}
+                      //       </div>
 
-                            <div
-                              style={{
-                                fontSize: '14px',
-                                fontFamily: 'Roboto Flex',
-                                color:
-                                  screenMode === 'dark' ? '#99BAFF' : '#2E3138',
-                                fontWeight: '500',
-                                borderTop: '1px solid #30323B',
-                                paddingTop: '16px',
-                                marginTop: '16px',
-                              }}
-                            >
-                              THỐNG KÊ TRONG NGÀY{' '}
-                              {moment
-                                .unix(
-                                  listGiaVang
-                                    ?.filter((itemHistory: any) => {
-                                      return (
-                                        item?.type_code ===
-                                        itemHistory?.type_code
-                                      );
-                                    })
-                                    ?.slice(1, 5)[0]?.update_time
-                                )
-                                .format('DD/MM/YYYY')}
-                            </div>
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                gap: '43px',
-                                justifyContent: 'space-around',
-                                borderRadius: '4px',
-                                border: '1px solid #30323B',
-                                height: '52px',
-                                alignItems: 'center',
-                                marginTop: '4px',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                }}
-                              >
-                                Thấp nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_min)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                }}
-                                className="vung1Header"
-                              >
-                                Cao nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_max)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                }}
-                              >
-                                Trung bình:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_avg)}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      }
+                      //       <div
+                      //         style={{
+                      //           fontSize: '14px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           color:
+                      //             screenMode === 'dark' ? '#99BAFF' : '#2E3138',
+                      //           fontWeight: '500',
+                      //           borderTop: '1px solid #30323B',
+                      //           paddingTop: '16px',
+                      //           marginTop: '16px',
+                      //         }}
+                      //       >
+                      //         THỐNG KÊ TRONG NGÀY{' '}
+                      //         {moment
+                      //           .unix(
+                      //             listGiaVang
+                      //               ?.filter((itemHistory: any) => {
+                      //                 return (
+                      //                   item?.type_code ===
+                      //                   itemHistory?.type_code
+                      //                 );
+                      //               })
+                      //               ?.slice(1, 5)[0]?.update_time
+                      //           )
+                      //           .format('DD/MM/YYYY')}
+                      //       </div>
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           gap: '43px',
+                      //           justifyContent: 'space-around',
+                      //           borderRadius: '4px',
+                      //           border: '1px solid #30323B',
+                      //           height: '52px',
+                      //           alignItems: 'center',
+                      //           marginTop: '4px',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //           }}
+                      //         >
+                      //           Thấp nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_min)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Cao nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_max)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //           }}
+                      //         >
+                      //           Trung bình:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_avg)}
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //     </div>
+                      //   </div>
+                      // }
                     >
                       <div
                         key={index}
@@ -5894,1059 +5894,1059 @@ const HangHoa: FC = ({
                         backgroundColor: 'transparent', // Optional: remove background color if needed
                       }}
                       style={{ overflow: 'hidden' }}
-                      title={
-                        <div
-                          id="dhtmltooltip"
-                          style={{
-                            left: '-800px',
-                            top: '1659px',
-                            overflow: 'hidden',
-                            backgroundColor:
-                              screenMode === 'dark' ? '#25262D' : '#FFFFFF',
-                            // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
-                          }}
-                        >
-                          <div
-                            style={{
-                              width: '500px',
-                              overflow: 'hidden',
-                              padding: '16px',
-                              // border: '1px solid #197fbf',
-                              borderRadius: '3px',
-                            }}
-                          >
-                            <div
-                              style={{
-                                fontSize: '16px',
-                                fontFamily: 'Roboto Flex',
-                                fontWeight: '600',
-                                textAlign: 'center',
-                                color: '#FFFFFF',
-                              }}
-                            >
-                              Lịch sử biến động giá mua/bán{' '}
-                              {LIST_MAP_GOLD_NAME[item?.type_code]}
-                            </div>
-                            {listGiaVang
-                              ?.filter((itemHistory: any) => {
-                                return (
-                                  item?.type_code === itemHistory?.type_code
-                                );
-                              })
-                              ?.slice(1, 5)
-                              ?.map((itemHistory: any) => {
-                                const timeGold = moment
-                                  .unix(itemHistory?.update_time)
-                                  .format('HH:mm:ss');
-                              }) && (
-                              <HighchartsReact
-                                highcharts={Highcharts}
-                                options={{
-                                  chart: {
-                                    type: 'column',
-                                    backgroundColor:
-                                      screenMode === 'dark'
-                                        ? '#25262D'
-                                        : '#FDFDFD',
+                      // title={
+                      //   <div
+                      //     id="dhtmltooltip"
+                      //     style={{
+                      //       left: '-800px',
+                      //       top: '1659px',
+                      //       overflow: 'hidden',
+                      //       backgroundColor:
+                      //         screenMode === 'dark' ? '#25262D' : '#FFFFFF',
+                      //       // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
+                      //     }}
+                      //   >
+                      //     <div
+                      //       style={{
+                      //         width: '500px',
+                      //         overflow: 'hidden',
+                      //         padding: '16px',
+                      //         // border: '1px solid #197fbf',
+                      //         borderRadius: '3px',
+                      //       }}
+                      //     >
+                      //       <div
+                      //         style={{
+                      //           fontSize: '16px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           fontWeight: '600',
+                      //           textAlign: 'center',
+                      //           color: '#FFFFFF',
+                      //         }}
+                      //       >
+                      //         Lịch sử biến động giá mua/bán{' '}
+                      //         {LIST_MAP_GOLD_NAME[item?.type_code]}
+                      //       </div>
+                      //       {listGiaVang
+                      //         ?.filter((itemHistory: any) => {
+                      //           return (
+                      //             item?.type_code === itemHistory?.type_code
+                      //           );
+                      //         })
+                      //         ?.slice(1, 5)
+                      //         ?.map((itemHistory: any) => {
+                      //           const timeGold = moment
+                      //             .unix(itemHistory?.update_time)
+                      //             .format('HH:mm:ss');
+                      //         }) && (
+                      //         <HighchartsReact
+                      //           highcharts={Highcharts}
+                      //           options={{
+                      //             chart: {
+                      //               type: 'column',
+                      //               backgroundColor:
+                      //                 screenMode === 'dark'
+                      //                   ? '#25262D'
+                      //                   : '#FDFDFD',
 
-                                    style: {
-                                      color: '#fff',
-                                    },
-                                    borderRadius: 8,
-                                    width: 500,
-                                    marginTop: 40,
-                                    marginLeft: 70,
-                                    marginBottom: 107,
-                                    height: 308,
-                                  },
-                                  credits: {
-                                    enabled: false, // Loại bỏ chữ "Highcharts.com"
-                                  },
-                                  title: {
-                                    text: null,
-                                    style: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                  },
-                                  colors: [
-                                    '#B28221',
-                                    '#43F3FF',
-                                    '#597BF8',
-                                    '#30DF9D',
-                                    '#FF36F5',
-                                    '#FFD097',
-                                    '#EF5E76',
-                                    '#FFF92F',
-                                  ],
-                                  legend: {
-                                    align: 'left',
-                                    verticalAlign: 'bottom',
-                                    layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
-                                    itemStyle: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                    minHeight: 70,
-                                    maxWidth: 500,
-                                    y: 20,
+                      //               style: {
+                      //                 color: '#fff',
+                      //               },
+                      //               borderRadius: 8,
+                      //               width: 500,
+                      //               marginTop: 40,
+                      //               marginLeft: 70,
+                      //               marginBottom: 107,
+                      //               height: 308,
+                      //             },
+                      //             credits: {
+                      //               enabled: false, // Loại bỏ chữ "Highcharts.com"
+                      //             },
+                      //             title: {
+                      //               text: null,
+                      //               style: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //             },
+                      //             colors: [
+                      //               '#B28221',
+                      //               '#43F3FF',
+                      //               '#597BF8',
+                      //               '#30DF9D',
+                      //               '#FF36F5',
+                      //               '#FFD097',
+                      //               '#EF5E76',
+                      //               '#FFF92F',
+                      //             ],
+                      //             legend: {
+                      //               align: 'left',
+                      //               verticalAlign: 'bottom',
+                      //               layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
+                      //               itemStyle: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //               minHeight: 70,
+                      //               maxWidth: 500,
+                      //               y: 20,
 
-                                    navigation: {
-                                      verticalAlign: 'left',
-                                    },
-                                  },
-                                  plotOptions: {
-                                    column: {
-                                      stacking: 'normal',
-                                      dataLabels: {
-                                        enabled: false,
-                                      },
-                                      borderRadius: 0,
-                                      borderWidth: 0,
-                                    },
-                                  },
-                                  tooltip: {
-                                    formatter: function () {
-                                      let tooltipContent = `<b>${this.x}</b><br/>`;
+                      //               navigation: {
+                      //                 verticalAlign: 'left',
+                      //               },
+                      //             },
+                      //             plotOptions: {
+                      //               column: {
+                      //                 stacking: 'normal',
+                      //                 dataLabels: {
+                      //                   enabled: false,
+                      //                 },
+                      //                 borderRadius: 0,
+                      //                 borderWidth: 0,
+                      //               },
+                      //             },
+                      //             tooltip: {
+                      //               formatter: function () {
+                      //                 let tooltipContent = `<b>${this.x}</b><br/>`;
 
-                                      tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
+                      //                 tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
 
-                                      return tooltipContent;
-                                    },
-                                    useHTML: true,
-                                  },
-                                  xAxis: {
-                                    categories: listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)
-                                      ?.map((itemHistory: any) => {
-                                        return moment
-                                          .unix(itemHistory?.update_time)
-                                          .format('HH:mm:ss');
-                                      }),
-                                    labels: {
-                                      style: {
-                                        fontSize: 12,
-                                        fontFamily: 'Roboto Flex',
-                                        color:
-                                          screenMode === 'dark'
-                                            ? '#fff'
-                                            : 'black',
-                                      },
-                                    },
-                                    gridLineColor: '#323546',
-                                    gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
-                                    tickLength: 40,
-                                    lineColor: '#e6d8d8', // Màu của đường kẻ axis
+                      //                 return tooltipContent;
+                      //               },
+                      //               useHTML: true,
+                      //             },
+                      //             xAxis: {
+                      //               categories: listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)
+                      //                 ?.map((itemHistory: any) => {
+                      //                   return moment
+                      //                     .unix(itemHistory?.update_time)
+                      //                     .format('HH:mm:ss');
+                      //                 }),
+                      //               labels: {
+                      //                 style: {
+                      //                   fontSize: 12,
+                      //                   fontFamily: 'Roboto Flex',
+                      //                   color:
+                      //                     screenMode === 'dark'
+                      //                       ? '#fff'
+                      //                       : 'black',
+                      //                 },
+                      //               },
+                      //               gridLineColor: '#323546',
+                      //               gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
+                      //               tickLength: 40,
+                      //               lineColor: '#e6d8d8', // Màu của đường kẻ axis
 
-                                    lineWidth: 0,
-                                    tickWidth: 0,
+                      //               lineWidth: 0,
+                      //               tickWidth: 0,
 
-                                    gridLineWidth: 0,
-                                    crosshair: {
-                                      color: 'gray',
-                                      width: 1,
-                                      zIndex: 5,
-                                    },
-                                  },
-                                  yAxis: [
-                                    {
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      axisLabel: {
-                                        formatter: function (value: number) {
-                                          if (value > 1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value < -1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value === 0) return 0;
-                                        },
-                                      },
-                                      title: {
-                                        text: null, // Loại bỏ tiêu đề "Values" trên trục y
-                                      },
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      labels: {
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                    {
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      opposite: true, // this will put it on the right side
-                                      title: {
-                                        text: null, // you can set your title here
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                      labels: {
-                                        formatter: function () {
-                                          return this.value + '%';
-                                        },
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                  ],
-                                  grid: {
-                                    left: 80,
-                                    right: 250,
-                                    top: 100,
-                                    bottom: 100,
-                                  },
-                                  series: [
-                                    {
-                                      name: 'Giá mua',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.buy_avg;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                    {
-                                      name: 'Giá bán',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.sell;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                  ],
-                                }}
-                              />
-                            )}
+                      //               gridLineWidth: 0,
+                      //               crosshair: {
+                      //                 color: 'gray',
+                      //                 width: 1,
+                      //                 zIndex: 5,
+                      //               },
+                      //             },
+                      //             yAxis: [
+                      //               {
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 axisLabel: {
+                      //                   formatter: function (value: number) {
+                      //                     if (value > 1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value < -1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value === 0) return 0;
+                      //                   },
+                      //                 },
+                      //                 title: {
+                      //                   text: null, // Loại bỏ tiêu đề "Values" trên trục y
+                      //                 },
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //               {
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 opposite: true, // this will put it on the right side
+                      //                 title: {
+                      //                   text: null, // you can set your title here
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   formatter: function () {
+                      //                     return this.value + '%';
+                      //                   },
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //             ],
+                      //             grid: {
+                      //               left: 80,
+                      //               right: 250,
+                      //               top: 100,
+                      //               bottom: 100,
+                      //             },
+                      //             series: [
+                      //               {
+                      //                 name: 'Giá mua',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.buy_avg;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //               {
+                      //                 name: 'Giá bán',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.sell;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //             ],
+                      //           }}
+                      //         />
+                      //       )}
 
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                marginTop: '8px',
-                                borderBottom:
-                                  screenMode === 'dark'
-                                    ? '1px solid #30323B'
-                                    : '1px solid #D5D7DC',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '96px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                  paddingLeft: '12px',
-                                }}
-                              >
-                                {moment
-                                  .unix(
-                                    listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)[0]?.update_time
-                                  )
-                                  .format('DD/MM/YYYY')}
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#5CD680'
-                                      : '#45783A',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá mua
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           marginTop: '8px',
+                      //           borderBottom:
+                      //             screenMode === 'dark'
+                      //               ? '1px solid #30323B'
+                      //               : '1px solid #D5D7DC',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '96px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //         >
+                      //           {moment
+                      //             .unix(
+                      //               listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)[0]?.update_time
+                      //             )
+                      //             .format('DD/MM/YYYY')}
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#5CD680'
+                      //                 : '#45783A',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá mua
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#D15449'
-                                      : '#A33929',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá bán
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#D15449'
+                      //                 : '#A33929',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá bán
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderBottom:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                            </div>
-                            <div>
-                              {listGiaVang
-                                ?.filter((itemHistory: any) => {
-                                  return (
-                                    item?.type_code === itemHistory?.type_code
-                                  );
-                                })
-                                ?.slice(1, 5)
-                                ?.map((itemHistory: any, index: number) => {
-                                  return (
-                                    <div
-                                      key={index}
-                                      style={{
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        alignItems: 'center',
-                                        // padding: '8px 0',
-                                        // borderRadius: '4px',
-                                        borderBottom:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                        borderRight:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                        // backgroundColor:
-                                        //   index % 2 === 0
-                                        //     ? screenMode === 'dark'
-                                        //       ? '#25262D'
-                                        //       : '#F0F3FA'
-                                        //     : screenMode === 'dark'
-                                        //       ? '#2A2E39'
-                                        //       : '#FDFDFD',
-                                      }}
-                                    >
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '700',
+                      //             borderBottom:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //       <div>
+                      //         {listGiaVang
+                      //           ?.filter((itemHistory: any) => {
+                      //             return (
+                      //               item?.type_code === itemHistory?.type_code
+                      //             );
+                      //           })
+                      //           ?.slice(1, 5)
+                      //           ?.map((itemHistory: any, index: number) => {
+                      //             return (
+                      //               <div
+                      //                 key={index}
+                      //                 style={{
+                      //                   display: 'flex',
+                      //                   flexDirection: 'row',
+                      //                   alignItems: 'center',
+                      //                   // padding: '8px 0',
+                      //                   // borderRadius: '4px',
+                      //                   borderBottom:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                   borderRight:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                   // backgroundColor:
+                      //                   //   index % 2 === 0
+                      //                   //     ? screenMode === 'dark'
+                      //                   //       ? '#25262D'
+                      //                   //       : '#F0F3FA'
+                      //                   //     : screenMode === 'dark'
+                      //                   //       ? '#2A2E39'
+                      //                   //       : '#FDFDFD',
+                      //                 }}
+                      //               >
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '700',
 
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          // color: '#3594EF',
-                                          width: '96px',
-                                          paddingLeft: '12px',
-                                          // marginRight: '0px',
-                                        }}
-                                      >
-                                        <span
-                                          style={{
-                                            color: '#DDC230',
-                                            // marginLeft: '4px',
-                                          }}
-                                        >
-                                          {moment
-                                            .unix(itemHistory?.update_time)
-                                            .format('HH:mm:ss')}
-                                        </span>
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.buy)}
-                                        {itemHistory?.buy > 0 ? (
-                                          // <UpOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          // <DownOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                        {/* {itemHistory?.alter_buy > 0 ? (
-                                          <UpOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        ) : (
-                                          <DownOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        )} */}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.alter_buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          paddingLeft: '12px',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     // color: '#3594EF',
+                      //                     width: '96px',
+                      //                     paddingLeft: '12px',
+                      //                     // marginRight: '0px',
+                      //                   }}
+                      //                 >
+                      //                   <span
+                      //                     style={{
+                      //                       color: '#DDC230',
+                      //                       // marginLeft: '4px',
+                      //                     }}
+                      //                   >
+                      //                     {moment
+                      //                       .unix(itemHistory?.update_time)
+                      //                       .format('HH:mm:ss')}
+                      //                   </span>
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.buy)}
+                      //                   {itemHistory?.buy > 0 ? (
+                      //                     // <UpOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     // <DownOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                   {/* {itemHistory?.alter_buy > 0 ? (
+                      //                     <UpOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   ) : (
+                      //                     <DownOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   )} */}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.alter_buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     paddingLeft: '12px',
 
-                                          // borderRight:
-                                          //   '1px solid rgba(207, 208, 212, 0.5)',
-                                        }}
-                                      >
-                                        {formatNumber(itemHistory?.alter_buy)}
-                                        {itemHistory?.alter_buy > 0 ? (
-                                          // <UpOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          // <DownOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                        {/* {itemHistory?.alter_buy > 0 ? (
-                                          <UpOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        ) : (
-                                          <DownOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        )} */}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          // marginLeft: '40px',
-                                          color:
-                                            itemHistory?.sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.sell)}
-                                        {itemHistory?.sell > 0 ? (
-                                          // <UpOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          // <DownOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
+                      //                     // borderRight:
+                      //                     //   '1px solid rgba(207, 208, 212, 0.5)',
+                      //                   }}
+                      //                 >
+                      //                   {formatNumber(itemHistory?.alter_buy)}
+                      //                   {itemHistory?.alter_buy > 0 ? (
+                      //                     // <UpOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     // <DownOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                   {/* {itemHistory?.alter_buy > 0 ? (
+                      //                     <UpOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   ) : (
+                      //                     <DownOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   )} */}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     // marginLeft: '40px',
+                      //                     color:
+                      //                       itemHistory?.sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.sell)}
+                      //                   {itemHistory?.sell > 0 ? (
+                      //                     // <UpOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     // <DownOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
 
-                                          color:
-                                            itemHistory?.alter_sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
+                      //                     color:
+                      //                       itemHistory?.alter_sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
 
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(
-                                          itemHistory?.alter_sell
-                                        )}
-                                        {itemHistory?.alter_sell > 0 ? (
-                                          // <UpOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          // <DownOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                        {/* {itemHistory?.alter_sell > 0 ? (
-                                          <UpOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        ) : (
-                                          <DownOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        )} */}
-                                      </div>
-                                    </div>
-                                  );
-                                })}
-                            </div>
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(
+                      //                     itemHistory?.alter_sell
+                      //                   )}
+                      //                   {itemHistory?.alter_sell > 0 ? (
+                      //                     // <UpOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     // <DownOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                   {/* {itemHistory?.alter_sell > 0 ? (
+                      //                     <UpOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   ) : (
+                      //                     <DownOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   )} */}
+                      //                 </div>
+                      //               </div>
+                      //             );
+                      //           })}
+                      //       </div>
 
-                            <div
-                              style={{
-                                fontSize: '14px',
-                                fontFamily: 'Roboto Flex',
-                                color:
-                                  screenMode === 'dark' ? '#99BAFF' : '#2E3138',
-                                fontWeight: '500',
-                                borderTop: '1px solid #30323B',
-                                paddingTop: '16px',
-                                marginTop: '16px',
-                                // textAlign: 'center',
-                                // marginTop: '10px',
-                              }}
-                            >
-                              THỐNG KÊ TRONG NGÀY{' '}
-                              {moment
-                                .unix(
-                                  listGiaVang
-                                    ?.filter((itemHistory: any) => {
-                                      return (
-                                        item?.type_code ===
-                                        itemHistory?.type_code
-                                      );
-                                    })
-                                    ?.slice(1, 5)[0]?.update_time
-                                )
-                                .format('DD/MM/YYYY')}
-                            </div>
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                gap: '43px',
-                                justifyContent: 'space-around',
-                                // marginTop: '8px',
-                                borderRadius: '4px',
-                                // padding: ' 2.5px 0 ',
-                                border: '1px solid #30323B',
-                                height: '52px',
-                                alignItems: 'center',
-                                marginTop: '4px',
-                                // backgroundColor:
-                                //   screenMode === 'dark'
-                                //     ? '#2A2E39'
-                                //     : '#F0F3FA',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '140px',
-                                }}
-                              >
-                                Thấp nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_min)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '120px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Cao nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_max)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '200px',
-                                }}
-                              >
-                                Trung bình:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_avg)}
-                                </span>
-                              </div>
-                              {/* <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '140px',
-                                }}
-                              >
-                                Thấp nhất
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '120px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Cao nhất
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '140px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Trung bình
-                              </div> */}
-                            </div>
-                            {/* <div>
-                              <div
-                                key={index}
-                                style={{
-                                  display: 'flex',
-                                  flexDirection: 'row',
-                                  alignItems: 'center',
-                                  // padding: '8px 0',
-                                  borderRadius: '4px',
-                                  backgroundColor:
-                                    index % 2 === 0
-                                      ? screenMode === 'dark'
-                                        ? '#25262D'
-                                        : '#F0F3FA'
-                                      : screenMode === 'dark'
-                                        ? '#2A2E39'
-                                        : '#FDFDFD',
-                                }}
-                              >
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color: '#fff',
-                                    // width: '140px',
-                                    marginRight: '0px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.buy_min)}
-                                </div>
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#FFFFFF'
-                                        : '#2E3138',
-                                    width: '120px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.buy_max)}
-                                </div>
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color: '#fff',
-                                    width: '200px',
-                                    marginRight: '0px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.buy_avg)}
-                                </div>
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color: '#fff',
-                                    width: '120px',
-                                    marginRight: '0px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.sell_min)}
-                                </div>
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#FFFFFF'
-                                        : '#2E3138',
-                                    width: '120px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.sell_max)}
-                                </div>
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#FFFFFF'
-                                        : '#2E3138',
-                                    width: '120px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.sell_avg)}
-                                </div>
-                              </div>
-                            </div> */}
-                          </div>
-                        </div>
-                      }
+                      //       <div
+                      //         style={{
+                      //           fontSize: '14px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           color:
+                      //             screenMode === 'dark' ? '#99BAFF' : '#2E3138',
+                      //           fontWeight: '500',
+                      //           borderTop: '1px solid #30323B',
+                      //           paddingTop: '16px',
+                      //           marginTop: '16px',
+                      //           // textAlign: 'center',
+                      //           // marginTop: '10px',
+                      //         }}
+                      //       >
+                      //         THỐNG KÊ TRONG NGÀY{' '}
+                      //         {moment
+                      //           .unix(
+                      //             listGiaVang
+                      //               ?.filter((itemHistory: any) => {
+                      //                 return (
+                      //                   item?.type_code ===
+                      //                   itemHistory?.type_code
+                      //                 );
+                      //               })
+                      //               ?.slice(1, 5)[0]?.update_time
+                      //           )
+                      //           .format('DD/MM/YYYY')}
+                      //       </div>
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           gap: '43px',
+                      //           justifyContent: 'space-around',
+                      //           // marginTop: '8px',
+                      //           borderRadius: '4px',
+                      //           // padding: ' 2.5px 0 ',
+                      //           border: '1px solid #30323B',
+                      //           height: '52px',
+                      //           alignItems: 'center',
+                      //           marginTop: '4px',
+                      //           // backgroundColor:
+                      //           //   screenMode === 'dark'
+                      //           //     ? '#2A2E39'
+                      //           //     : '#F0F3FA',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '140px',
+                      //           }}
+                      //         >
+                      //           Thấp nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_min)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '120px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Cao nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_max)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '200px',
+                      //           }}
+                      //         >
+                      //           Trung bình:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_avg)}
+                      //           </span>
+                      //         </div>
+                      //         {/* <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '140px',
+                      //           }}
+                      //         >
+                      //           Thấp nhất
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '120px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Cao nhất
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '140px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Trung bình
+                      //         </div> */}
+                      //       </div>
+                      //       {/* <div>
+                      //         <div
+                      //           key={index}
+                      //           style={{
+                      //             display: 'flex',
+                      //             flexDirection: 'row',
+                      //             alignItems: 'center',
+                      //             // padding: '8px 0',
+                      //             borderRadius: '4px',
+                      //             backgroundColor:
+                      //               index % 2 === 0
+                      //                 ? screenMode === 'dark'
+                      //                   ? '#25262D'
+                      //                   : '#F0F3FA'
+                      //                 : screenMode === 'dark'
+                      //                   ? '#2A2E39'
+                      //                   : '#FDFDFD',
+                      //           }}
+                      //         >
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color: '#fff',
+                      //               // width: '140px',
+                      //               marginRight: '0px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.buy_min)}
+                      //           </div>
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#FFFFFF'
+                      //                   : '#2E3138',
+                      //               width: '120px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.buy_max)}
+                      //           </div>
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color: '#fff',
+                      //               width: '200px',
+                      //               marginRight: '0px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.buy_avg)}
+                      //           </div>
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color: '#fff',
+                      //               width: '120px',
+                      //               marginRight: '0px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.sell_min)}
+                      //           </div>
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#FFFFFF'
+                      //                   : '#2E3138',
+                      //               width: '120px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.sell_max)}
+                      //           </div>
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#FFFFFF'
+                      //                   : '#2E3138',
+                      //               width: '120px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.sell_avg)}
+                      //           </div>
+                      //         </div>
+                      //       </div> */}
+                      //     </div>
+                      //   </div>
+                      // }
                     >
                       <div
                         key={index}
@@ -7228,1059 +7228,1059 @@ const HangHoa: FC = ({
                         backgroundColor: 'transparent', // Optional: remove background color if needed
                       }}
                       style={{ overflow: 'hidden' }}
-                      title={
-                        <div
-                          id="dhtmltooltip"
-                          style={{
-                            left: '-800px',
-                            top: '1659px',
-                            overflow: 'hidden',
-                            backgroundColor:
-                              screenMode === 'dark' ? '#25262D' : '#FFFFFF',
-                            // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
-                          }}
-                        >
-                          <div
-                            style={{
-                              width: '500px',
-                              overflow: 'hidden',
-                              padding: '16px',
-                              // border: '1px solid #197fbf',
-                              borderRadius: '3px',
-                            }}
-                          >
-                            <div
-                              style={{
-                                fontSize: '16px',
-                                fontFamily: 'Roboto Flex',
-                                fontWeight: '600',
-                                textAlign: 'center',
-                                color: '#FFFFFF',
-                              }}
-                            >
-                              Lịch sử biến động giá mua/bán{' '}
-                              {LIST_MAP_GOLD_NAME[item?.type_code]}
-                            </div>
-                            {listGiaVang
-                              ?.filter((itemHistory: any) => {
-                                return (
-                                  item?.type_code === itemHistory?.type_code
-                                );
-                              })
-                              ?.slice(1, 5)
-                              ?.map((itemHistory: any) => {
-                                const timeGold = moment
-                                  .unix(itemHistory?.update_time)
-                                  .format('HH:mm:ss');
-                              }) && (
-                              <HighchartsReact
-                                highcharts={Highcharts}
-                                options={{
-                                  chart: {
-                                    type: 'column',
-                                    backgroundColor:
-                                      screenMode === 'dark'
-                                        ? '#25262D'
-                                        : '#FDFDFD',
+                      // title={
+                      //   <div
+                      //     id="dhtmltooltip"
+                      //     style={{
+                      //       left: '-800px',
+                      //       top: '1659px',
+                      //       overflow: 'hidden',
+                      //       backgroundColor:
+                      //         screenMode === 'dark' ? '#25262D' : '#FFFFFF',
+                      //       // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
+                      //     }}
+                      //   >
+                      //     <div
+                      //       style={{
+                      //         width: '500px',
+                      //         overflow: 'hidden',
+                      //         padding: '16px',
+                      //         // border: '1px solid #197fbf',
+                      //         borderRadius: '3px',
+                      //       }}
+                      //     >
+                      //       <div
+                      //         style={{
+                      //           fontSize: '16px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           fontWeight: '600',
+                      //           textAlign: 'center',
+                      //           color: '#FFFFFF',
+                      //         }}
+                      //       >
+                      //         Lịch sử biến động giá mua/bán{' '}
+                      //         {LIST_MAP_GOLD_NAME[item?.type_code]}
+                      //       </div>
+                      //       {listGiaVang
+                      //         ?.filter((itemHistory: any) => {
+                      //           return (
+                      //             item?.type_code === itemHistory?.type_code
+                      //           );
+                      //         })
+                      //         ?.slice(1, 5)
+                      //         ?.map((itemHistory: any) => {
+                      //           const timeGold = moment
+                      //             .unix(itemHistory?.update_time)
+                      //             .format('HH:mm:ss');
+                      //         }) && (
+                      //         <HighchartsReact
+                      //           highcharts={Highcharts}
+                      //           options={{
+                      //             chart: {
+                      //               type: 'column',
+                      //               backgroundColor:
+                      //                 screenMode === 'dark'
+                      //                   ? '#25262D'
+                      //                   : '#FDFDFD',
 
-                                    style: {
-                                      color: '#fff',
-                                    },
-                                    borderRadius: 8,
-                                    width: 500,
-                                    marginTop: 40,
-                                    marginLeft: 70,
-                                    marginBottom: 107,
-                                    height: 308,
-                                  },
-                                  credits: {
-                                    enabled: false, // Loại bỏ chữ "Highcharts.com"
-                                  },
-                                  title: {
-                                    text: null,
-                                    style: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                  },
-                                  colors: [
-                                    '#B28221',
-                                    '#43F3FF',
-                                    '#597BF8',
-                                    '#30DF9D',
-                                    '#FF36F5',
-                                    '#FFD097',
-                                    '#EF5E76',
-                                    '#FFF92F',
-                                  ],
-                                  legend: {
-                                    align: 'left',
-                                    verticalAlign: 'bottom',
-                                    layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
-                                    itemStyle: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                    minHeight: 70,
-                                    maxWidth: 500,
-                                    y: 20,
+                      //               style: {
+                      //                 color: '#fff',
+                      //               },
+                      //               borderRadius: 8,
+                      //               width: 500,
+                      //               marginTop: 40,
+                      //               marginLeft: 70,
+                      //               marginBottom: 107,
+                      //               height: 308,
+                      //             },
+                      //             credits: {
+                      //               enabled: false, // Loại bỏ chữ "Highcharts.com"
+                      //             },
+                      //             title: {
+                      //               text: null,
+                      //               style: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //             },
+                      //             colors: [
+                      //               '#B28221',
+                      //               '#43F3FF',
+                      //               '#597BF8',
+                      //               '#30DF9D',
+                      //               '#FF36F5',
+                      //               '#FFD097',
+                      //               '#EF5E76',
+                      //               '#FFF92F',
+                      //             ],
+                      //             legend: {
+                      //               align: 'left',
+                      //               verticalAlign: 'bottom',
+                      //               layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
+                      //               itemStyle: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //               minHeight: 70,
+                      //               maxWidth: 500,
+                      //               y: 20,
 
-                                    navigation: {
-                                      verticalAlign: 'left',
-                                    },
-                                  },
-                                  plotOptions: {
-                                    column: {
-                                      stacking: 'normal',
-                                      dataLabels: {
-                                        enabled: false,
-                                      },
-                                      borderRadius: 0,
-                                      borderWidth: 0,
-                                    },
-                                  },
-                                  tooltip: {
-                                    formatter: function () {
-                                      let tooltipContent = `<b>${this.x}</b><br/>`;
+                      //               navigation: {
+                      //                 verticalAlign: 'left',
+                      //               },
+                      //             },
+                      //             plotOptions: {
+                      //               column: {
+                      //                 stacking: 'normal',
+                      //                 dataLabels: {
+                      //                   enabled: false,
+                      //                 },
+                      //                 borderRadius: 0,
+                      //                 borderWidth: 0,
+                      //               },
+                      //             },
+                      //             tooltip: {
+                      //               formatter: function () {
+                      //                 let tooltipContent = `<b>${this.x}</b><br/>`;
 
-                                      tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
+                      //                 tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
 
-                                      return tooltipContent;
-                                    },
-                                    useHTML: true,
-                                  },
-                                  xAxis: {
-                                    categories: listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)
-                                      ?.map((itemHistory: any) => {
-                                        return moment
-                                          .unix(itemHistory?.update_time)
-                                          .format('HH:mm:ss');
-                                      }),
-                                    labels: {
-                                      style: {
-                                        fontSize: 12,
-                                        fontFamily: 'Roboto Flex',
-                                        color:
-                                          screenMode === 'dark'
-                                            ? '#fff'
-                                            : 'black',
-                                      },
-                                    },
-                                    gridLineColor: '#323546',
-                                    gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
-                                    tickLength: 40,
-                                    lineColor: '#e6d8d8', // Màu của đường kẻ axis
+                      //                 return tooltipContent;
+                      //               },
+                      //               useHTML: true,
+                      //             },
+                      //             xAxis: {
+                      //               categories: listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)
+                      //                 ?.map((itemHistory: any) => {
+                      //                   return moment
+                      //                     .unix(itemHistory?.update_time)
+                      //                     .format('HH:mm:ss');
+                      //                 }),
+                      //               labels: {
+                      //                 style: {
+                      //                   fontSize: 12,
+                      //                   fontFamily: 'Roboto Flex',
+                      //                   color:
+                      //                     screenMode === 'dark'
+                      //                       ? '#fff'
+                      //                       : 'black',
+                      //                 },
+                      //               },
+                      //               gridLineColor: '#323546',
+                      //               gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
+                      //               tickLength: 40,
+                      //               lineColor: '#e6d8d8', // Màu của đường kẻ axis
 
-                                    lineWidth: 0,
-                                    tickWidth: 0,
+                      //               lineWidth: 0,
+                      //               tickWidth: 0,
 
-                                    gridLineWidth: 0,
-                                    crosshair: {
-                                      color: 'gray',
-                                      width: 1,
-                                      zIndex: 5,
-                                    },
-                                  },
-                                  yAxis: [
-                                    {
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      axisLabel: {
-                                        formatter: function (value: number) {
-                                          if (value > 1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value < -1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value === 0) return 0;
-                                        },
-                                      },
-                                      title: {
-                                        text: null, // Loại bỏ tiêu đề "Values" trên trục y
-                                      },
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      labels: {
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                    {
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      opposite: true, // this will put it on the right side
-                                      title: {
-                                        text: null, // you can set your title here
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                      labels: {
-                                        formatter: function () {
-                                          return this.value + '%';
-                                        },
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                  ],
-                                  grid: {
-                                    left: 80,
-                                    right: 250,
-                                    top: 100,
-                                    bottom: 100,
-                                  },
-                                  series: [
-                                    {
-                                      name: 'Giá mua',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.buy_avg;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                    {
-                                      name: 'Giá bán',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.sell;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                  ],
-                                }}
-                              />
-                            )}
+                      //               gridLineWidth: 0,
+                      //               crosshair: {
+                      //                 color: 'gray',
+                      //                 width: 1,
+                      //                 zIndex: 5,
+                      //               },
+                      //             },
+                      //             yAxis: [
+                      //               {
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 axisLabel: {
+                      //                   formatter: function (value: number) {
+                      //                     if (value > 1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value < -1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value === 0) return 0;
+                      //                   },
+                      //                 },
+                      //                 title: {
+                      //                   text: null, // Loại bỏ tiêu đề "Values" trên trục y
+                      //                 },
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //               {
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 opposite: true, // this will put it on the right side
+                      //                 title: {
+                      //                   text: null, // you can set your title here
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   formatter: function () {
+                      //                     return this.value + '%';
+                      //                   },
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //             ],
+                      //             grid: {
+                      //               left: 80,
+                      //               right: 250,
+                      //               top: 100,
+                      //               bottom: 100,
+                      //             },
+                      //             series: [
+                      //               {
+                      //                 name: 'Giá mua',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.buy_avg;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //               {
+                      //                 name: 'Giá bán',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.sell;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //             ],
+                      //           }}
+                      //         />
+                      //       )}
 
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                marginTop: '8px',
-                                borderBottom:
-                                  screenMode === 'dark'
-                                    ? '1px solid #30323B'
-                                    : '1px solid #D5D7DC',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '96px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                  paddingLeft: '12px',
-                                }}
-                              >
-                                {moment
-                                  .unix(
-                                    listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)[0]?.update_time
-                                  )
-                                  .format('DD/MM/YYYY')}
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#5CD680'
-                                      : '#45783A',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá mua
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           marginTop: '8px',
+                      //           borderBottom:
+                      //             screenMode === 'dark'
+                      //               ? '1px solid #30323B'
+                      //               : '1px solid #D5D7DC',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '96px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //         >
+                      //           {moment
+                      //             .unix(
+                      //               listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)[0]?.update_time
+                      //             )
+                      //             .format('DD/MM/YYYY')}
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#5CD680'
+                      //                 : '#45783A',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá mua
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#D15449'
-                                      : '#A33929',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá bán
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#D15449'
+                      //                 : '#A33929',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá bán
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderBottom:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                            </div>
-                            <div>
-                              {listGiaVang
-                                ?.filter((itemHistory: any) => {
-                                  return (
-                                    item?.type_code === itemHistory?.type_code
-                                  );
-                                })
-                                ?.slice(1, 5)
-                                ?.map((itemHistory: any, index: number) => {
-                                  return (
-                                    <div
-                                      key={index}
-                                      style={{
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        alignItems: 'center',
-                                        // padding: '8px 0',
-                                        // borderRadius: '4px',
-                                        borderBottom:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                        borderRight:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                        // backgroundColor:
-                                        //   index % 2 === 0
-                                        //     ? screenMode === 'dark'
-                                        //       ? '#25262D'
-                                        //       : '#F0F3FA'
-                                        //     : screenMode === 'dark'
-                                        //       ? '#2A2E39'
-                                        //       : '#FDFDFD',
-                                      }}
-                                    >
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '700',
+                      //             borderBottom:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //       <div>
+                      //         {listGiaVang
+                      //           ?.filter((itemHistory: any) => {
+                      //             return (
+                      //               item?.type_code === itemHistory?.type_code
+                      //             );
+                      //           })
+                      //           ?.slice(1, 5)
+                      //           ?.map((itemHistory: any, index: number) => {
+                      //             return (
+                      //               <div
+                      //                 key={index}
+                      //                 style={{
+                      //                   display: 'flex',
+                      //                   flexDirection: 'row',
+                      //                   alignItems: 'center',
+                      //                   // padding: '8px 0',
+                      //                   // borderRadius: '4px',
+                      //                   borderBottom:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                   borderRight:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                   // backgroundColor:
+                      //                   //   index % 2 === 0
+                      //                   //     ? screenMode === 'dark'
+                      //                   //       ? '#25262D'
+                      //                   //       : '#F0F3FA'
+                      //                   //     : screenMode === 'dark'
+                      //                   //       ? '#2A2E39'
+                      //                   //       : '#FDFDFD',
+                      //                 }}
+                      //               >
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '700',
 
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          // color: '#3594EF',
-                                          width: '96px',
-                                          paddingLeft: '12px',
-                                          // marginRight: '0px',
-                                        }}
-                                      >
-                                        <span
-                                          style={{
-                                            color: '#DDC230',
-                                            // marginLeft: '4px',
-                                          }}
-                                        >
-                                          {moment
-                                            .unix(itemHistory?.update_time)
-                                            .format('HH:mm:ss')}
-                                        </span>
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.buy)}
-                                        {itemHistory?.buy > 0 ? (
-                                          // <UpOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          // <DownOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                        {/* {itemHistory?.alter_buy > 0 ? (
-                                          <UpOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        ) : (
-                                          <DownOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        )} */}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.alter_buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          paddingLeft: '12px',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     // color: '#3594EF',
+                      //                     width: '96px',
+                      //                     paddingLeft: '12px',
+                      //                     // marginRight: '0px',
+                      //                   }}
+                      //                 >
+                      //                   <span
+                      //                     style={{
+                      //                       color: '#DDC230',
+                      //                       // marginLeft: '4px',
+                      //                     }}
+                      //                   >
+                      //                     {moment
+                      //                       .unix(itemHistory?.update_time)
+                      //                       .format('HH:mm:ss')}
+                      //                   </span>
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.buy)}
+                      //                   {itemHistory?.buy > 0 ? (
+                      //                     // <UpOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     // <DownOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                   {/* {itemHistory?.alter_buy > 0 ? (
+                      //                     <UpOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   ) : (
+                      //                     <DownOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   )} */}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.alter_buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     paddingLeft: '12px',
 
-                                          // borderRight:
-                                          //   '1px solid rgba(207, 208, 212, 0.5)',
-                                        }}
-                                      >
-                                        {formatNumber(itemHistory?.alter_buy)}
-                                        {itemHistory?.alter_buy > 0 ? (
-                                          // <UpOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          // <DownOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                        {/* {itemHistory?.alter_buy > 0 ? (
-                                          <UpOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        ) : (
-                                          <DownOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        )} */}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          // marginLeft: '40px',
-                                          color:
-                                            itemHistory?.sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.sell)}
-                                        {itemHistory?.sell > 0 ? (
-                                          // <UpOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          // <DownOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
+                      //                     // borderRight:
+                      //                     //   '1px solid rgba(207, 208, 212, 0.5)',
+                      //                   }}
+                      //                 >
+                      //                   {formatNumber(itemHistory?.alter_buy)}
+                      //                   {itemHistory?.alter_buy > 0 ? (
+                      //                     // <UpOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     // <DownOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                   {/* {itemHistory?.alter_buy > 0 ? (
+                      //                     <UpOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   ) : (
+                      //                     <DownOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   )} */}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     // marginLeft: '40px',
+                      //                     color:
+                      //                       itemHistory?.sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.sell)}
+                      //                   {itemHistory?.sell > 0 ? (
+                      //                     // <UpOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     // <DownOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
 
-                                          color:
-                                            itemHistory?.alter_sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
+                      //                     color:
+                      //                       itemHistory?.alter_sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
 
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(
-                                          itemHistory?.alter_sell
-                                        )}
-                                        {itemHistory?.alter_sell > 0 ? (
-                                          // <UpOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          // <DownOutlined
-                                          //   style={{
-                                          //     fontSize: '9px',
-                                          //     marginLeft: '2px',
-                                          //   }}
-                                          // />
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                        {/* {itemHistory?.alter_sell > 0 ? (
-                                          <UpOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        ) : (
-                                          <DownOutlined
-                                            style={{
-                                              fontSize: '9px',
-                                              // marginLeft: '2px',
-                                            }}
-                                          />
-                                        )} */}
-                                      </div>
-                                    </div>
-                                  );
-                                })}
-                            </div>
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(
+                      //                     itemHistory?.alter_sell
+                      //                   )}
+                      //                   {itemHistory?.alter_sell > 0 ? (
+                      //                     // <UpOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     // <DownOutlined
+                      //                     //   style={{
+                      //                     //     fontSize: '9px',
+                      //                     //     marginLeft: '2px',
+                      //                     //   }}
+                      //                     // />
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                   {/* {itemHistory?.alter_sell > 0 ? (
+                      //                     <UpOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   ) : (
+                      //                     <DownOutlined
+                      //                       style={{
+                      //                         fontSize: '9px',
+                      //                         // marginLeft: '2px',
+                      //                       }}
+                      //                     />
+                      //                   )} */}
+                      //                 </div>
+                      //               </div>
+                      //             );
+                      //           })}
+                      //       </div>
 
-                            <div
-                              style={{
-                                fontSize: '14px',
-                                fontFamily: 'Roboto Flex',
-                                color:
-                                  screenMode === 'dark' ? '#99BAFF' : '#2E3138',
-                                fontWeight: '500',
-                                borderTop: '1px solid #30323B',
-                                paddingTop: '16px',
-                                marginTop: '16px',
-                                // textAlign: 'center',
-                                // marginTop: '10px',
-                              }}
-                            >
-                              THỐNG KÊ TRONG NGÀY{' '}
-                              {moment
-                                .unix(
-                                  listGiaVang
-                                    ?.filter((itemHistory: any) => {
-                                      return (
-                                        item?.type_code ===
-                                        itemHistory?.type_code
-                                      );
-                                    })
-                                    ?.slice(1, 5)[0]?.update_time
-                                )
-                                .format('DD/MM/YYYY')}
-                            </div>
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                gap: '43px',
-                                justifyContent: 'space-around',
-                                // marginTop: '8px',
-                                borderRadius: '4px',
-                                // padding: ' 2.5px 0 ',
-                                border: '1px solid #30323B',
-                                height: '52px',
-                                alignItems: 'center',
-                                marginTop: '4px',
-                                // backgroundColor:
-                                //   screenMode === 'dark'
-                                //     ? '#2A2E39'
-                                //     : '#F0F3FA',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '140px',
-                                }}
-                              >
-                                Thấp nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_min)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '120px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Cao nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_max)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '200px',
-                                }}
-                              >
-                                Trung bình:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_avg)}
-                                </span>
-                              </div>
-                              {/* <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '140px',
-                                }}
-                              >
-                                Thấp nhất
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '120px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Cao nhất
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '140px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Trung bình
-                              </div> */}
-                            </div>
-                            {/* <div>
-                              <div
-                                key={index}
-                                style={{
-                                  display: 'flex',
-                                  flexDirection: 'row',
-                                  alignItems: 'center',
-                                  // padding: '8px 0',
-                                  borderRadius: '4px',
-                                  backgroundColor:
-                                    index % 2 === 0
-                                      ? screenMode === 'dark'
-                                        ? '#25262D'
-                                        : '#F0F3FA'
-                                      : screenMode === 'dark'
-                                        ? '#2A2E39'
-                                        : '#FDFDFD',
-                                }}
-                              >
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color: '#fff',
-                                    // width: '140px',
-                                    marginRight: '0px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.buy_min)}
-                                </div>
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#FFFFFF'
-                                        : '#2E3138',
-                                    width: '120px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.buy_max)}
-                                </div>
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color: '#fff',
-                                    width: '200px',
-                                    marginRight: '0px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.buy_avg)}
-                                </div>
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color: '#fff',
-                                    width: '120px',
-                                    marginRight: '0px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.sell_min)}
-                                </div>
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#FFFFFF'
-                                        : '#2E3138',
-                                    width: '120px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.sell_max)}
-                                </div>
-                                <div
-                                  style={{
-                                    fontFamily: 'Roboto Flex',
-                                    fontWeight: '400',
-                                    fontSize: '14px',
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#FFFFFF'
-                                        : '#2E3138',
-                                    width: '120px',
-                                  }}
-                                >
-                                  {formatGoldPrice(item?.sell_avg)}
-                                </div>
-                              </div>
-                            </div> */}
-                          </div>
-                        </div>
-                      }
+                      //       <div
+                      //         style={{
+                      //           fontSize: '14px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           color:
+                      //             screenMode === 'dark' ? '#99BAFF' : '#2E3138',
+                      //           fontWeight: '500',
+                      //           borderTop: '1px solid #30323B',
+                      //           paddingTop: '16px',
+                      //           marginTop: '16px',
+                      //           // textAlign: 'center',
+                      //           // marginTop: '10px',
+                      //         }}
+                      //       >
+                      //         THỐNG KÊ TRONG NGÀY{' '}
+                      //         {moment
+                      //           .unix(
+                      //             listGiaVang
+                      //               ?.filter((itemHistory: any) => {
+                      //                 return (
+                      //                   item?.type_code ===
+                      //                   itemHistory?.type_code
+                      //                 );
+                      //               })
+                      //               ?.slice(1, 5)[0]?.update_time
+                      //           )
+                      //           .format('DD/MM/YYYY')}
+                      //       </div>
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           gap: '43px',
+                      //           justifyContent: 'space-around',
+                      //           // marginTop: '8px',
+                      //           borderRadius: '4px',
+                      //           // padding: ' 2.5px 0 ',
+                      //           border: '1px solid #30323B',
+                      //           height: '52px',
+                      //           alignItems: 'center',
+                      //           marginTop: '4px',
+                      //           // backgroundColor:
+                      //           //   screenMode === 'dark'
+                      //           //     ? '#2A2E39'
+                      //           //     : '#F0F3FA',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '140px',
+                      //           }}
+                      //         >
+                      //           Thấp nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_min)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '120px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Cao nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_max)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '200px',
+                      //           }}
+                      //         >
+                      //           Trung bình:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_avg)}
+                      //           </span>
+                      //         </div>
+                      //         {/* <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '140px',
+                      //           }}
+                      //         >
+                      //           Thấp nhất
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '120px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Cao nhất
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '140px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Trung bình
+                      //         </div> */}
+                      //       </div>
+                      //       {/* <div>
+                      //         <div
+                      //           key={index}
+                      //           style={{
+                      //             display: 'flex',
+                      //             flexDirection: 'row',
+                      //             alignItems: 'center',
+                      //             // padding: '8px 0',
+                      //             borderRadius: '4px',
+                      //             backgroundColor:
+                      //               index % 2 === 0
+                      //                 ? screenMode === 'dark'
+                      //                   ? '#25262D'
+                      //                   : '#F0F3FA'
+                      //                 : screenMode === 'dark'
+                      //                   ? '#2A2E39'
+                      //                   : '#FDFDFD',
+                      //           }}
+                      //         >
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color: '#fff',
+                      //               // width: '140px',
+                      //               marginRight: '0px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.buy_min)}
+                      //           </div>
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#FFFFFF'
+                      //                   : '#2E3138',
+                      //               width: '120px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.buy_max)}
+                      //           </div>
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color: '#fff',
+                      //               width: '200px',
+                      //               marginRight: '0px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.buy_avg)}
+                      //           </div>
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color: '#fff',
+                      //               width: '120px',
+                      //               marginRight: '0px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.sell_min)}
+                      //           </div>
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#FFFFFF'
+                      //                   : '#2E3138',
+                      //               width: '120px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.sell_max)}
+                      //           </div>
+                      //           <div
+                      //             style={{
+                      //               fontFamily: 'Roboto Flex',
+                      //               fontWeight: '400',
+                      //               fontSize: '14px',
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#FFFFFF'
+                      //                   : '#2E3138',
+                      //               width: '120px',
+                      //             }}
+                      //           >
+                      //             {formatGoldPrice(item?.sell_avg)}
+                      //           </div>
+                      //         </div>
+                      //       </div> */}
+                      //     </div>
+                      //   </div>
+                      // }
                     >
                       <div
                         key={index}
@@ -8542,798 +8542,798 @@ const HangHoa: FC = ({
                         backgroundColor: 'transparent', // Optional: remove background color if needed
                       }}
                       style={{ overflow: 'hidden' }}
-                      title={
-                        <div
-                          id="dhtmltooltip"
-                          style={{
-                            left: '-800px',
-                            top: '1659px',
-                            overflow: 'hidden',
-                            backgroundColor:
-                              screenMode === 'dark' ? '#25262D' : '#FFFFFF',
-                            // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
-                          }}
-                        >
-                          <div
-                            style={{
-                              width: '500px',
-                              overflow: 'hidden',
-                              padding: '16px',
-                              // border: '1px solid #197fbf',
-                              borderRadius: '3px',
-                            }}
-                          >
-                            <div
-                              style={{
-                                fontSize: '16px',
-                                fontFamily: 'Roboto Flex',
-                                fontWeight: '600',
-                                textAlign: 'center',
-                                color: '#FFFFFF',
-                              }}
-                            >
-                              Lịch sử biến động giá mua/bán{' '}
-                              {LIST_MAP_GOLD_NAME[item?.type_code]}
-                            </div>
-                            {listGiaVang
-                              ?.filter((itemHistory: any) => {
-                                return (
-                                  item?.type_code === itemHistory?.type_code
-                                );
-                              })
-                              ?.slice(1, 5)
-                              ?.map((itemHistory: any) => {
-                                const timeGold = moment
-                                  .unix(itemHistory?.update_time)
-                                  .format('HH:mm:ss');
-                              }) && (
-                              <HighchartsReact
-                                highcharts={Highcharts}
-                                options={{
-                                  chart: {
-                                    type: 'column',
-                                    backgroundColor:
-                                      screenMode === 'dark'
-                                        ? '#25262D'
-                                        : '#FDFDFD',
+                      // title={
+                      //   <div
+                      //     id="dhtmltooltip"
+                      //     style={{
+                      //       left: '-800px',
+                      //       top: '1659px',
+                      //       overflow: 'hidden',
+                      //       backgroundColor:
+                      //         screenMode === 'dark' ? '#25262D' : '#FFFFFF',
+                      //       // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
+                      //     }}
+                      //   >
+                      //     <div
+                      //       style={{
+                      //         width: '500px',
+                      //         overflow: 'hidden',
+                      //         padding: '16px',
+                      //         // border: '1px solid #197fbf',
+                      //         borderRadius: '3px',
+                      //       }}
+                      //     >
+                      //       <div
+                      //         style={{
+                      //           fontSize: '16px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           fontWeight: '600',
+                      //           textAlign: 'center',
+                      //           color: '#FFFFFF',
+                      //         }}
+                      //       >
+                      //         Lịch sử biến động giá mua/bán{' '}
+                      //         {LIST_MAP_GOLD_NAME[item?.type_code]}
+                      //       </div>
+                      //       {listGiaVang
+                      //         ?.filter((itemHistory: any) => {
+                      //           return (
+                      //             item?.type_code === itemHistory?.type_code
+                      //           );
+                      //         })
+                      //         ?.slice(1, 5)
+                      //         ?.map((itemHistory: any) => {
+                      //           const timeGold = moment
+                      //             .unix(itemHistory?.update_time)
+                      //             .format('HH:mm:ss');
+                      //         }) && (
+                      //         <HighchartsReact
+                      //           highcharts={Highcharts}
+                      //           options={{
+                      //             chart: {
+                      //               type: 'column',
+                      //               backgroundColor:
+                      //                 screenMode === 'dark'
+                      //                   ? '#25262D'
+                      //                   : '#FDFDFD',
 
-                                    style: {
-                                      color: '#fff',
-                                    },
-                                    borderRadius: 8,
-                                    width: 500,
-                                    marginTop: 40,
-                                    marginLeft: 70,
-                                    marginBottom: 107,
-                                    height: 308,
-                                  },
-                                  credits: {
-                                    enabled: false, // Loại bỏ chữ "Highcharts.com"
-                                  },
-                                  title: {
-                                    text: null,
-                                    style: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                  },
-                                  colors: [
-                                    '#B28221',
-                                    '#43F3FF',
-                                    '#597BF8',
-                                    '#30DF9D',
-                                    '#FF36F5',
-                                    '#FFD097',
-                                    '#EF5E76',
-                                    '#FFF92F',
-                                  ],
-                                  legend: {
-                                    align: 'left',
-                                    verticalAlign: 'bottom',
-                                    layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
-                                    itemStyle: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                    minHeight: 70,
-                                    maxWidth: 500,
-                                    y: 20,
+                      //               style: {
+                      //                 color: '#fff',
+                      //               },
+                      //               borderRadius: 8,
+                      //               width: 500,
+                      //               marginTop: 40,
+                      //               marginLeft: 70,
+                      //               marginBottom: 107,
+                      //               height: 308,
+                      //             },
+                      //             credits: {
+                      //               enabled: false, // Loại bỏ chữ "Highcharts.com"
+                      //             },
+                      //             title: {
+                      //               text: null,
+                      //               style: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //             },
+                      //             colors: [
+                      //               '#B28221',
+                      //               '#43F3FF',
+                      //               '#597BF8',
+                      //               '#30DF9D',
+                      //               '#FF36F5',
+                      //               '#FFD097',
+                      //               '#EF5E76',
+                      //               '#FFF92F',
+                      //             ],
+                      //             legend: {
+                      //               align: 'left',
+                      //               verticalAlign: 'bottom',
+                      //               layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
+                      //               itemStyle: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //               minHeight: 70,
+                      //               maxWidth: 500,
+                      //               y: 20,
 
-                                    navigation: {
-                                      verticalAlign: 'left',
-                                    },
-                                  },
-                                  plotOptions: {
-                                    column: {
-                                      stacking: 'normal',
-                                      dataLabels: {
-                                        enabled: false,
-                                      },
-                                      borderRadius: 0,
-                                      borderWidth: 0,
-                                    },
-                                  },
-                                  tooltip: {
-                                    formatter: function () {
-                                      let tooltipContent = `<b>${this.x}</b><br/>`;
+                      //               navigation: {
+                      //                 verticalAlign: 'left',
+                      //               },
+                      //             },
+                      //             plotOptions: {
+                      //               column: {
+                      //                 stacking: 'normal',
+                      //                 dataLabels: {
+                      //                   enabled: false,
+                      //                 },
+                      //                 borderRadius: 0,
+                      //                 borderWidth: 0,
+                      //               },
+                      //             },
+                      //             tooltip: {
+                      //               formatter: function () {
+                      //                 let tooltipContent = `<b>${this.x}</b><br/>`;
 
-                                      tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
+                      //                 tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
 
-                                      return tooltipContent;
-                                    },
-                                    useHTML: true,
-                                  },
-                                  xAxis: {
-                                    categories: listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)
-                                      ?.map((itemHistory: any) => {
-                                        return moment
-                                          .unix(itemHistory?.update_time)
-                                          .format('HH:mm:ss');
-                                      }),
-                                    labels: {
-                                      style: {
-                                        fontSize: 12,
-                                        fontFamily: 'Roboto Flex',
-                                        color:
-                                          screenMode === 'dark'
-                                            ? '#fff'
-                                            : 'black',
-                                      },
-                                    },
-                                    gridLineColor: '#323546',
-                                    gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
-                                    tickLength: 40,
-                                    lineColor: '#e6d8d8', // Màu của đường kẻ axis
+                      //                 return tooltipContent;
+                      //               },
+                      //               useHTML: true,
+                      //             },
+                      //             xAxis: {
+                      //               categories: listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)
+                      //                 ?.map((itemHistory: any) => {
+                      //                   return moment
+                      //                     .unix(itemHistory?.update_time)
+                      //                     .format('HH:mm:ss');
+                      //                 }),
+                      //               labels: {
+                      //                 style: {
+                      //                   fontSize: 12,
+                      //                   fontFamily: 'Roboto Flex',
+                      //                   color:
+                      //                     screenMode === 'dark'
+                      //                       ? '#fff'
+                      //                       : 'black',
+                      //                 },
+                      //               },
+                      //               gridLineColor: '#323546',
+                      //               gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
+                      //               tickLength: 40,
+                      //               lineColor: '#e6d8d8', // Màu của đường kẻ axis
 
-                                    lineWidth: 0,
-                                    tickWidth: 0,
+                      //               lineWidth: 0,
+                      //               tickWidth: 0,
 
-                                    gridLineWidth: 0,
-                                    crosshair: {
-                                      color: 'gray',
-                                      width: 1,
-                                      zIndex: 5,
-                                    },
-                                  },
-                                  yAxis: [
-                                    {
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      axisLabel: {
-                                        formatter: function (value: number) {
-                                          if (value > 1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value < -1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value === 0) return 0;
-                                        },
-                                      },
-                                      title: {
-                                        text: null, // Loại bỏ tiêu đề "Values" trên trục y
-                                      },
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      labels: {
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                    {
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      opposite: true, // this will put it on the right side
-                                      title: {
-                                        text: null, // you can set your title here
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                      labels: {
-                                        formatter: function () {
-                                          return this.value + '%';
-                                        },
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                  ],
-                                  grid: {
-                                    left: 80,
-                                    right: 250,
-                                    top: 100,
-                                    bottom: 100,
-                                  },
-                                  series: [
-                                    {
-                                      name: 'Giá mua',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.buy_avg;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                    {
-                                      name: 'Giá bán',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.sell;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                  ],
-                                }}
-                              />
-                            )}
+                      //               gridLineWidth: 0,
+                      //               crosshair: {
+                      //                 color: 'gray',
+                      //                 width: 1,
+                      //                 zIndex: 5,
+                      //               },
+                      //             },
+                      //             yAxis: [
+                      //               {
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 axisLabel: {
+                      //                   formatter: function (value: number) {
+                      //                     if (value > 1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value < -1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value === 0) return 0;
+                      //                   },
+                      //                 },
+                      //                 title: {
+                      //                   text: null, // Loại bỏ tiêu đề "Values" trên trục y
+                      //                 },
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //               {
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 opposite: true, // this will put it on the right side
+                      //                 title: {
+                      //                   text: null, // you can set your title here
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   formatter: function () {
+                      //                     return this.value + '%';
+                      //                   },
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //             ],
+                      //             grid: {
+                      //               left: 80,
+                      //               right: 250,
+                      //               top: 100,
+                      //               bottom: 100,
+                      //             },
+                      //             series: [
+                      //               {
+                      //                 name: 'Giá mua',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.buy_avg;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //               {
+                      //                 name: 'Giá bán',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.sell;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //             ],
+                      //           }}
+                      //         />
+                      //       )}
 
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                marginTop: '8px',
-                                borderBottom:
-                                  screenMode === 'dark'
-                                    ? '1px solid #30323B'
-                                    : '1px solid #D5D7DC',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '96px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                  paddingLeft: '12px',
-                                }}
-                              >
-                                {moment
-                                  .unix(
-                                    listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)[0]?.update_time
-                                  )
-                                  .format('DD/MM/YYYY')}
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#5CD680'
-                                      : '#45783A',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá mua
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           marginTop: '8px',
+                      //           borderBottom:
+                      //             screenMode === 'dark'
+                      //               ? '1px solid #30323B'
+                      //               : '1px solid #D5D7DC',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '96px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //         >
+                      //           {moment
+                      //             .unix(
+                      //               listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)[0]?.update_time
+                      //             )
+                      //             .format('DD/MM/YYYY')}
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#5CD680'
+                      //                 : '#45783A',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá mua
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#D15449'
-                                      : '#A33929',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá bán
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#D15449'
+                      //                 : '#A33929',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá bán
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderBottom:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                            </div>
-                            <div>
-                              {listGiaVang
-                                ?.filter((itemHistory: any) => {
-                                  return (
-                                    item?.type_code === itemHistory?.type_code
-                                  );
-                                })
-                                ?.slice(1, 5)
-                                ?.map((itemHistory: any, index: number) => {
-                                  return (
-                                    <div
-                                      key={index}
-                                      style={{
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        alignItems: 'center',
+                      //             borderBottom:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //       <div>
+                      //         {listGiaVang
+                      //           ?.filter((itemHistory: any) => {
+                      //             return (
+                      //               item?.type_code === itemHistory?.type_code
+                      //             );
+                      //           })
+                      //           ?.slice(1, 5)
+                      //           ?.map((itemHistory: any, index: number) => {
+                      //             return (
+                      //               <div
+                      //                 key={index}
+                      //                 style={{
+                      //                   display: 'flex',
+                      //                   flexDirection: 'row',
+                      //                   alignItems: 'center',
 
-                                        borderBottom:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                        borderRight:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                      }}
-                                    >
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '700',
+                      //                   borderBottom:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                   borderRight:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                 }}
+                      //               >
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '700',
 
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          width: '96px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        <span
-                                          style={{
-                                            color: '#DDC230',
-                                          }}
-                                        >
-                                          {moment
-                                            .unix(itemHistory?.update_time)
-                                            .format('HH:mm:ss')}
-                                        </span>
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.buy)}
-                                        {itemHistory?.buy > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.alter_buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatNumber(itemHistory?.alter_buy)}
-                                        {itemHistory?.alter_buy > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.sell)}
-                                        {itemHistory?.sell > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     width: '96px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   <span
+                      //                     style={{
+                      //                       color: '#DDC230',
+                      //                     }}
+                      //                   >
+                      //                     {moment
+                      //                       .unix(itemHistory?.update_time)
+                      //                       .format('HH:mm:ss')}
+                      //                   </span>
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.buy)}
+                      //                   {itemHistory?.buy > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.alter_buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatNumber(itemHistory?.alter_buy)}
+                      //                   {itemHistory?.alter_buy > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.sell)}
+                      //                   {itemHistory?.sell > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
 
-                                          color:
-                                            itemHistory?.alter_sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
+                      //                     color:
+                      //                       itemHistory?.alter_sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
 
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(
-                                          itemHistory?.alter_sell
-                                        )}
-                                        {itemHistory?.alter_sell > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                    </div>
-                                  );
-                                })}
-                            </div>
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(
+                      //                     itemHistory?.alter_sell
+                      //                   )}
+                      //                   {itemHistory?.alter_sell > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //               </div>
+                      //             );
+                      //           })}
+                      //       </div>
 
-                            <div
-                              style={{
-                                fontSize: '14px',
-                                fontFamily: 'Roboto Flex',
-                                color:
-                                  screenMode === 'dark' ? '#99BAFF' : '#2E3138',
-                                fontWeight: '500',
-                                borderTop: '1px solid #30323B',
-                                paddingTop: '16px',
-                                marginTop: '16px',
-                              }}
-                            >
-                              THỐNG KÊ TRONG NGÀY{' '}
-                              {moment
-                                .unix(
-                                  listGiaVang
-                                    ?.filter((itemHistory: any) => {
-                                      return (
-                                        item?.type_code ===
-                                        itemHistory?.type_code
-                                      );
-                                    })
-                                    ?.slice(1, 5)[0]?.update_time
-                                )
-                                .format('DD/MM/YYYY')}
-                            </div>
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                gap: '43px',
-                                justifyContent: 'space-around',
-                                borderRadius: '4px',
-                                border: '1px solid #30323B',
-                                height: '52px',
-                                alignItems: 'center',
-                                marginTop: '4px',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                }}
-                              >
-                                Thấp nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_min)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '120px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Cao nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_max)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '200px',
-                                }}
-                              >
-                                Trung bình:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_avg)}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      }
+                      //       <div
+                      //         style={{
+                      //           fontSize: '14px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           color:
+                      //             screenMode === 'dark' ? '#99BAFF' : '#2E3138',
+                      //           fontWeight: '500',
+                      //           borderTop: '1px solid #30323B',
+                      //           paddingTop: '16px',
+                      //           marginTop: '16px',
+                      //         }}
+                      //       >
+                      //         THỐNG KÊ TRONG NGÀY{' '}
+                      //         {moment
+                      //           .unix(
+                      //             listGiaVang
+                      //               ?.filter((itemHistory: any) => {
+                      //                 return (
+                      //                   item?.type_code ===
+                      //                   itemHistory?.type_code
+                      //                 );
+                      //               })
+                      //               ?.slice(1, 5)[0]?.update_time
+                      //           )
+                      //           .format('DD/MM/YYYY')}
+                      //       </div>
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           gap: '43px',
+                      //           justifyContent: 'space-around',
+                      //           borderRadius: '4px',
+                      //           border: '1px solid #30323B',
+                      //           height: '52px',
+                      //           alignItems: 'center',
+                      //           marginTop: '4px',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //           }}
+                      //         >
+                      //           Thấp nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_min)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '120px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Cao nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_max)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '200px',
+                      //           }}
+                      //         >
+                      //           Trung bình:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_avg)}
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //     </div>
+                      //   </div>
+                      // }
                     >
                       <div
                         key={index}
@@ -9595,798 +9595,798 @@ const HangHoa: FC = ({
                         backgroundColor: 'transparent', // Optional: remove background color if needed
                       }}
                       style={{ overflow: 'hidden' }}
-                      title={
-                        <div
-                          id="dhtmltooltip"
-                          style={{
-                            left: '-800px',
-                            top: '1659px',
-                            overflow: 'hidden',
-                            backgroundColor:
-                              screenMode === 'dark' ? '#25262D' : '#FFFFFF',
-                            // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
-                          }}
-                        >
-                          <div
-                            style={{
-                              width: '500px',
-                              overflow: 'hidden',
-                              padding: '16px',
-                              // border: '1px solid #197fbf',
-                              borderRadius: '3px',
-                            }}
-                          >
-                            <div
-                              style={{
-                                fontSize: '16px',
-                                fontFamily: 'Roboto Flex',
-                                fontWeight: '600',
-                                textAlign: 'center',
-                                color: '#FFFFFF',
-                              }}
-                            >
-                              Lịch sử biến động giá mua/bán{' '}
-                              {LIST_MAP_GOLD_NAME[item?.type_code]}
-                            </div>
-                            {listGiaVang
-                              ?.filter((itemHistory: any) => {
-                                return (
-                                  item?.type_code === itemHistory?.type_code
-                                );
-                              })
-                              ?.slice(1, 5)
-                              ?.map((itemHistory: any) => {
-                                const timeGold = moment
-                                  .unix(itemHistory?.update_time)
-                                  .format('HH:mm:ss');
-                              }) && (
-                              <HighchartsReact
-                                highcharts={Highcharts}
-                                options={{
-                                  chart: {
-                                    type: 'column',
-                                    backgroundColor:
-                                      screenMode === 'dark'
-                                        ? '#25262D'
-                                        : '#FDFDFD',
+                      // title={
+                      //   <div
+                      //     id="dhtmltooltip"
+                      //     style={{
+                      //       left: '-800px',
+                      //       top: '1659px',
+                      //       overflow: 'hidden',
+                      //       backgroundColor:
+                      //         screenMode === 'dark' ? '#25262D' : '#FFFFFF',
+                      //       // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
+                      //     }}
+                      //   >
+                      //     <div
+                      //       style={{
+                      //         width: '500px',
+                      //         overflow: 'hidden',
+                      //         padding: '16px',
+                      //         // border: '1px solid #197fbf',
+                      //         borderRadius: '3px',
+                      //       }}
+                      //     >
+                      //       <div
+                      //         style={{
+                      //           fontSize: '16px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           fontWeight: '600',
+                      //           textAlign: 'center',
+                      //           color: '#FFFFFF',
+                      //         }}
+                      //       >
+                      //         Lịch sử biến động giá mua/bán{' '}
+                      //         {LIST_MAP_GOLD_NAME[item?.type_code]}
+                      //       </div>
+                      //       {listGiaVang
+                      //         ?.filter((itemHistory: any) => {
+                      //           return (
+                      //             item?.type_code === itemHistory?.type_code
+                      //           );
+                      //         })
+                      //         ?.slice(1, 5)
+                      //         ?.map((itemHistory: any) => {
+                      //           const timeGold = moment
+                      //             .unix(itemHistory?.update_time)
+                      //             .format('HH:mm:ss');
+                      //         }) && (
+                      //         <HighchartsReact
+                      //           highcharts={Highcharts}
+                      //           options={{
+                      //             chart: {
+                      //               type: 'column',
+                      //               backgroundColor:
+                      //                 screenMode === 'dark'
+                      //                   ? '#25262D'
+                      //                   : '#FDFDFD',
 
-                                    style: {
-                                      color: '#fff',
-                                    },
-                                    borderRadius: 8,
-                                    width: 500,
-                                    marginTop: 40,
-                                    marginLeft: 70,
-                                    marginBottom: 107,
-                                    height: 308,
-                                  },
-                                  credits: {
-                                    enabled: false, // Loại bỏ chữ "Highcharts.com"
-                                  },
-                                  title: {
-                                    text: null,
-                                    style: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                  },
-                                  colors: [
-                                    '#B28221',
-                                    '#43F3FF',
-                                    '#597BF8',
-                                    '#30DF9D',
-                                    '#FF36F5',
-                                    '#FFD097',
-                                    '#EF5E76',
-                                    '#FFF92F',
-                                  ],
-                                  legend: {
-                                    align: 'left',
-                                    verticalAlign: 'bottom',
-                                    layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
-                                    itemStyle: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                    minHeight: 70,
-                                    maxWidth: 500,
-                                    y: 20,
+                      //               style: {
+                      //                 color: '#fff',
+                      //               },
+                      //               borderRadius: 8,
+                      //               width: 500,
+                      //               marginTop: 40,
+                      //               marginLeft: 70,
+                      //               marginBottom: 107,
+                      //               height: 308,
+                      //             },
+                      //             credits: {
+                      //               enabled: false, // Loại bỏ chữ "Highcharts.com"
+                      //             },
+                      //             title: {
+                      //               text: null,
+                      //               style: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //             },
+                      //             colors: [
+                      //               '#B28221',
+                      //               '#43F3FF',
+                      //               '#597BF8',
+                      //               '#30DF9D',
+                      //               '#FF36F5',
+                      //               '#FFD097',
+                      //               '#EF5E76',
+                      //               '#FFF92F',
+                      //             ],
+                      //             legend: {
+                      //               align: 'left',
+                      //               verticalAlign: 'bottom',
+                      //               layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
+                      //               itemStyle: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //               minHeight: 70,
+                      //               maxWidth: 500,
+                      //               y: 20,
 
-                                    navigation: {
-                                      verticalAlign: 'left',
-                                    },
-                                  },
-                                  plotOptions: {
-                                    column: {
-                                      stacking: 'normal',
-                                      dataLabels: {
-                                        enabled: false,
-                                      },
-                                      borderRadius: 0,
-                                      borderWidth: 0,
-                                    },
-                                  },
-                                  tooltip: {
-                                    formatter: function () {
-                                      let tooltipContent = `<b>${this.x}</b><br/>`;
+                      //               navigation: {
+                      //                 verticalAlign: 'left',
+                      //               },
+                      //             },
+                      //             plotOptions: {
+                      //               column: {
+                      //                 stacking: 'normal',
+                      //                 dataLabels: {
+                      //                   enabled: false,
+                      //                 },
+                      //                 borderRadius: 0,
+                      //                 borderWidth: 0,
+                      //               },
+                      //             },
+                      //             tooltip: {
+                      //               formatter: function () {
+                      //                 let tooltipContent = `<b>${this.x}</b><br/>`;
 
-                                      tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
+                      //                 tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
 
-                                      return tooltipContent;
-                                    },
-                                    useHTML: true,
-                                  },
-                                  xAxis: {
-                                    categories: listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)
-                                      ?.map((itemHistory: any) => {
-                                        return moment
-                                          .unix(itemHistory?.update_time)
-                                          .format('HH:mm:ss');
-                                      }),
-                                    labels: {
-                                      style: {
-                                        fontSize: 12,
-                                        fontFamily: 'Roboto Flex',
-                                        color:
-                                          screenMode === 'dark'
-                                            ? '#fff'
-                                            : 'black',
-                                      },
-                                    },
-                                    gridLineColor: '#323546',
-                                    gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
-                                    tickLength: 40,
-                                    lineColor: '#e6d8d8', // Màu của đường kẻ axis
+                      //                 return tooltipContent;
+                      //               },
+                      //               useHTML: true,
+                      //             },
+                      //             xAxis: {
+                      //               categories: listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)
+                      //                 ?.map((itemHistory: any) => {
+                      //                   return moment
+                      //                     .unix(itemHistory?.update_time)
+                      //                     .format('HH:mm:ss');
+                      //                 }),
+                      //               labels: {
+                      //                 style: {
+                      //                   fontSize: 12,
+                      //                   fontFamily: 'Roboto Flex',
+                      //                   color:
+                      //                     screenMode === 'dark'
+                      //                       ? '#fff'
+                      //                       : 'black',
+                      //                 },
+                      //               },
+                      //               gridLineColor: '#323546',
+                      //               gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
+                      //               tickLength: 40,
+                      //               lineColor: '#e6d8d8', // Màu của đường kẻ axis
 
-                                    lineWidth: 0,
-                                    tickWidth: 0,
+                      //               lineWidth: 0,
+                      //               tickWidth: 0,
 
-                                    gridLineWidth: 0,
-                                    crosshair: {
-                                      color: 'gray',
-                                      width: 1,
-                                      zIndex: 5,
-                                    },
-                                  },
-                                  yAxis: [
-                                    {
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      axisLabel: {
-                                        formatter: function (value: number) {
-                                          if (value > 1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value < -1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value === 0) return 0;
-                                        },
-                                      },
-                                      title: {
-                                        text: null, // Loại bỏ tiêu đề "Values" trên trục y
-                                      },
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      labels: {
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                    {
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      opposite: true, // this will put it on the right side
-                                      title: {
-                                        text: null, // you can set your title here
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                      labels: {
-                                        formatter: function () {
-                                          return this.value + '%';
-                                        },
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                  ],
-                                  grid: {
-                                    left: 80,
-                                    right: 250,
-                                    top: 100,
-                                    bottom: 100,
-                                  },
-                                  series: [
-                                    {
-                                      name: 'Giá mua',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.buy_avg;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                    {
-                                      name: 'Giá bán',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.sell;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                  ],
-                                }}
-                              />
-                            )}
+                      //               gridLineWidth: 0,
+                      //               crosshair: {
+                      //                 color: 'gray',
+                      //                 width: 1,
+                      //                 zIndex: 5,
+                      //               },
+                      //             },
+                      //             yAxis: [
+                      //               {
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 axisLabel: {
+                      //                   formatter: function (value: number) {
+                      //                     if (value > 1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value < -1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value === 0) return 0;
+                      //                   },
+                      //                 },
+                      //                 title: {
+                      //                   text: null, // Loại bỏ tiêu đề "Values" trên trục y
+                      //                 },
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //               {
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 opposite: true, // this will put it on the right side
+                      //                 title: {
+                      //                   text: null, // you can set your title here
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   formatter: function () {
+                      //                     return this.value + '%';
+                      //                   },
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //             ],
+                      //             grid: {
+                      //               left: 80,
+                      //               right: 250,
+                      //               top: 100,
+                      //               bottom: 100,
+                      //             },
+                      //             series: [
+                      //               {
+                      //                 name: 'Giá mua',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.buy_avg;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //               {
+                      //                 name: 'Giá bán',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.sell;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //             ],
+                      //           }}
+                      //         />
+                      //       )}
 
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                marginTop: '8px',
-                                borderBottom:
-                                  screenMode === 'dark'
-                                    ? '1px solid #30323B'
-                                    : '1px solid #D5D7DC',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '96px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                  paddingLeft: '12px',
-                                }}
-                              >
-                                {moment
-                                  .unix(
-                                    listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)[0]?.update_time
-                                  )
-                                  .format('DD/MM/YYYY')}
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#5CD680'
-                                      : '#45783A',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá mua
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           marginTop: '8px',
+                      //           borderBottom:
+                      //             screenMode === 'dark'
+                      //               ? '1px solid #30323B'
+                      //               : '1px solid #D5D7DC',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '96px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //         >
+                      //           {moment
+                      //             .unix(
+                      //               listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)[0]?.update_time
+                      //             )
+                      //             .format('DD/MM/YYYY')}
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#5CD680'
+                      //                 : '#45783A',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá mua
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#D15449'
-                                      : '#A33929',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá bán
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#D15449'
+                      //                 : '#A33929',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá bán
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderBottom:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                            </div>
-                            <div>
-                              {listGiaVang
-                                ?.filter((itemHistory: any) => {
-                                  return (
-                                    item?.type_code === itemHistory?.type_code
-                                  );
-                                })
-                                ?.slice(1, 5)
-                                ?.map((itemHistory: any, index: number) => {
-                                  return (
-                                    <div
-                                      key={index}
-                                      style={{
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        alignItems: 'center',
+                      //             borderBottom:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //       <div>
+                      //         {listGiaVang
+                      //           ?.filter((itemHistory: any) => {
+                      //             return (
+                      //               item?.type_code === itemHistory?.type_code
+                      //             );
+                      //           })
+                      //           ?.slice(1, 5)
+                      //           ?.map((itemHistory: any, index: number) => {
+                      //             return (
+                      //               <div
+                      //                 key={index}
+                      //                 style={{
+                      //                   display: 'flex',
+                      //                   flexDirection: 'row',
+                      //                   alignItems: 'center',
 
-                                        borderBottom:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                        borderRight:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                      }}
-                                    >
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '700',
+                      //                   borderBottom:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                   borderRight:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                 }}
+                      //               >
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '700',
 
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          width: '96px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        <span
-                                          style={{
-                                            color: '#DDC230',
-                                          }}
-                                        >
-                                          {moment
-                                            .unix(itemHistory?.update_time)
-                                            .format('HH:mm:ss')}
-                                        </span>
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.buy)}
-                                        {itemHistory?.buy > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.alter_buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatNumber(itemHistory?.alter_buy)}
-                                        {itemHistory?.alter_buy > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.sell)}
-                                        {itemHistory?.sell > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     width: '96px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   <span
+                      //                     style={{
+                      //                       color: '#DDC230',
+                      //                     }}
+                      //                   >
+                      //                     {moment
+                      //                       .unix(itemHistory?.update_time)
+                      //                       .format('HH:mm:ss')}
+                      //                   </span>
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.buy)}
+                      //                   {itemHistory?.buy > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.alter_buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatNumber(itemHistory?.alter_buy)}
+                      //                   {itemHistory?.alter_buy > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.sell)}
+                      //                   {itemHistory?.sell > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
 
-                                          color:
-                                            itemHistory?.alter_sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
+                      //                     color:
+                      //                       itemHistory?.alter_sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
 
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(
-                                          itemHistory?.alter_sell
-                                        )}
-                                        {itemHistory?.alter_sell > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                    </div>
-                                  );
-                                })}
-                            </div>
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(
+                      //                     itemHistory?.alter_sell
+                      //                   )}
+                      //                   {itemHistory?.alter_sell > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //               </div>
+                      //             );
+                      //           })}
+                      //       </div>
 
-                            <div
-                              style={{
-                                fontSize: '14px',
-                                fontFamily: 'Roboto Flex',
-                                color:
-                                  screenMode === 'dark' ? '#99BAFF' : '#2E3138',
-                                fontWeight: '500',
-                                borderTop: '1px solid #30323B',
-                                paddingTop: '16px',
-                                marginTop: '16px',
-                              }}
-                            >
-                              THỐNG KÊ TRONG NGÀY{' '}
-                              {moment
-                                .unix(
-                                  listGiaVang
-                                    ?.filter((itemHistory: any) => {
-                                      return (
-                                        item?.type_code ===
-                                        itemHistory?.type_code
-                                      );
-                                    })
-                                    ?.slice(1, 5)[0]?.update_time
-                                )
-                                .format('DD/MM/YYYY')}
-                            </div>
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                gap: '43px',
-                                justifyContent: 'space-around',
-                                borderRadius: '4px',
-                                border: '1px solid #30323B',
-                                height: '52px',
-                                alignItems: 'center',
-                                marginTop: '4px',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                }}
-                              >
-                                Thấp nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_min)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '120px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Cao nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_max)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '200px',
-                                }}
-                              >
-                                Trung bình:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_avg)}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      }
+                      //       <div
+                      //         style={{
+                      //           fontSize: '14px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           color:
+                      //             screenMode === 'dark' ? '#99BAFF' : '#2E3138',
+                      //           fontWeight: '500',
+                      //           borderTop: '1px solid #30323B',
+                      //           paddingTop: '16px',
+                      //           marginTop: '16px',
+                      //         }}
+                      //       >
+                      //         THỐNG KÊ TRONG NGÀY{' '}
+                      //         {moment
+                      //           .unix(
+                      //             listGiaVang
+                      //               ?.filter((itemHistory: any) => {
+                      //                 return (
+                      //                   item?.type_code ===
+                      //                   itemHistory?.type_code
+                      //                 );
+                      //               })
+                      //               ?.slice(1, 5)[0]?.update_time
+                      //           )
+                      //           .format('DD/MM/YYYY')}
+                      //       </div>
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           gap: '43px',
+                      //           justifyContent: 'space-around',
+                      //           borderRadius: '4px',
+                      //           border: '1px solid #30323B',
+                      //           height: '52px',
+                      //           alignItems: 'center',
+                      //           marginTop: '4px',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //           }}
+                      //         >
+                      //           Thấp nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_min)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '120px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Cao nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_max)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '200px',
+                      //           }}
+                      //         >
+                      //           Trung bình:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_avg)}
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //     </div>
+                      //   </div>
+                      // }
                     >
                       <div
                         key={index}
@@ -10648,798 +10648,798 @@ const HangHoa: FC = ({
                         backgroundColor: 'transparent', // Optional: remove background color if needed
                       }}
                       style={{ overflow: 'hidden' }}
-                      title={
-                        <div
-                          id="dhtmltooltip"
-                          style={{
-                            left: '-800px',
-                            top: '1659px',
-                            overflow: 'hidden',
-                            backgroundColor:
-                              screenMode === 'dark' ? '#25262D' : '#FFFFFF',
-                            // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
-                          }}
-                        >
-                          <div
-                            style={{
-                              width: '500px',
-                              overflow: 'hidden',
-                              padding: '16px',
-                              // border: '1px solid #197fbf',
-                              borderRadius: '3px',
-                            }}
-                          >
-                            <div
-                              style={{
-                                fontSize: '16px',
-                                fontFamily: 'Roboto Flex',
-                                fontWeight: '600',
-                                textAlign: 'center',
-                                color: '#FFFFFF',
-                              }}
-                            >
-                              Lịch sử biến động giá mua/bán{' '}
-                              {LIST_MAP_GOLD_NAME[item?.type_code]}
-                            </div>
-                            {listGiaVang
-                              ?.filter((itemHistory: any) => {
-                                return (
-                                  item?.type_code === itemHistory?.type_code
-                                );
-                              })
-                              ?.slice(1, 5)
-                              ?.map((itemHistory: any) => {
-                                const timeGold = moment
-                                  .unix(itemHistory?.update_time)
-                                  .format('HH:mm:ss');
-                              }) && (
-                              <HighchartsReact
-                                highcharts={Highcharts}
-                                options={{
-                                  chart: {
-                                    type: 'column',
-                                    backgroundColor:
-                                      screenMode === 'dark'
-                                        ? '#25262D'
-                                        : '#FDFDFD',
+                      // title={
+                      //   <div
+                      //     id="dhtmltooltip"
+                      //     style={{
+                      //       left: '-800px',
+                      //       top: '1659px',
+                      //       overflow: 'hidden',
+                      //       backgroundColor:
+                      //         screenMode === 'dark' ? '#25262D' : '#FFFFFF',
+                      //       // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
+                      //     }}
+                      //   >
+                      //     <div
+                      //       style={{
+                      //         width: '500px',
+                      //         overflow: 'hidden',
+                      //         padding: '16px',
+                      //         // border: '1px solid #197fbf',
+                      //         borderRadius: '3px',
+                      //       }}
+                      //     >
+                      //       <div
+                      //         style={{
+                      //           fontSize: '16px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           fontWeight: '600',
+                      //           textAlign: 'center',
+                      //           color: '#FFFFFF',
+                      //         }}
+                      //       >
+                      //         Lịch sử biến động giá mua/bán{' '}
+                      //         {LIST_MAP_GOLD_NAME[item?.type_code]}
+                      //       </div>
+                      //       {listGiaVang
+                      //         ?.filter((itemHistory: any) => {
+                      //           return (
+                      //             item?.type_code === itemHistory?.type_code
+                      //           );
+                      //         })
+                      //         ?.slice(1, 5)
+                      //         ?.map((itemHistory: any) => {
+                      //           const timeGold = moment
+                      //             .unix(itemHistory?.update_time)
+                      //             .format('HH:mm:ss');
+                      //         }) && (
+                      //         <HighchartsReact
+                      //           highcharts={Highcharts}
+                      //           options={{
+                      //             chart: {
+                      //               type: 'column',
+                      //               backgroundColor:
+                      //                 screenMode === 'dark'
+                      //                   ? '#25262D'
+                      //                   : '#FDFDFD',
 
-                                    style: {
-                                      color: '#fff',
-                                    },
-                                    borderRadius: 8,
-                                    width: 500,
-                                    marginTop: 40,
-                                    marginLeft: 70,
-                                    marginBottom: 107,
-                                    height: 308,
-                                  },
-                                  credits: {
-                                    enabled: false, // Loại bỏ chữ "Highcharts.com"
-                                  },
-                                  title: {
-                                    text: null,
-                                    style: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                  },
-                                  colors: [
-                                    '#B28221',
-                                    '#43F3FF',
-                                    '#597BF8',
-                                    '#30DF9D',
-                                    '#FF36F5',
-                                    '#FFD097',
-                                    '#EF5E76',
-                                    '#FFF92F',
-                                  ],
-                                  legend: {
-                                    align: 'left',
-                                    verticalAlign: 'bottom',
-                                    layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
-                                    itemStyle: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                    minHeight: 70,
-                                    maxWidth: 500,
-                                    y: 20,
+                      //               style: {
+                      //                 color: '#fff',
+                      //               },
+                      //               borderRadius: 8,
+                      //               width: 500,
+                      //               marginTop: 40,
+                      //               marginLeft: 70,
+                      //               marginBottom: 107,
+                      //               height: 308,
+                      //             },
+                      //             credits: {
+                      //               enabled: false, // Loại bỏ chữ "Highcharts.com"
+                      //             },
+                      //             title: {
+                      //               text: null,
+                      //               style: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //             },
+                      //             colors: [
+                      //               '#B28221',
+                      //               '#43F3FF',
+                      //               '#597BF8',
+                      //               '#30DF9D',
+                      //               '#FF36F5',
+                      //               '#FFD097',
+                      //               '#EF5E76',
+                      //               '#FFF92F',
+                      //             ],
+                      //             legend: {
+                      //               align: 'left',
+                      //               verticalAlign: 'bottom',
+                      //               layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
+                      //               itemStyle: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //               minHeight: 70,
+                      //               maxWidth: 500,
+                      //               y: 20,
 
-                                    navigation: {
-                                      verticalAlign: 'left',
-                                    },
-                                  },
-                                  plotOptions: {
-                                    column: {
-                                      stacking: 'normal',
-                                      dataLabels: {
-                                        enabled: false,
-                                      },
-                                      borderRadius: 0,
-                                      borderWidth: 0,
-                                    },
-                                  },
-                                  tooltip: {
-                                    formatter: function () {
-                                      let tooltipContent = `<b>${this.x}</b><br/>`;
+                      //               navigation: {
+                      //                 verticalAlign: 'left',
+                      //               },
+                      //             },
+                      //             plotOptions: {
+                      //               column: {
+                      //                 stacking: 'normal',
+                      //                 dataLabels: {
+                      //                   enabled: false,
+                      //                 },
+                      //                 borderRadius: 0,
+                      //                 borderWidth: 0,
+                      //               },
+                      //             },
+                      //             tooltip: {
+                      //               formatter: function () {
+                      //                 let tooltipContent = `<b>${this.x}</b><br/>`;
 
-                                      tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
+                      //                 tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
 
-                                      return tooltipContent;
-                                    },
-                                    useHTML: true,
-                                  },
-                                  xAxis: {
-                                    categories: listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)
-                                      ?.map((itemHistory: any) => {
-                                        return moment
-                                          .unix(itemHistory?.update_time)
-                                          .format('HH:mm:ss');
-                                      }),
-                                    labels: {
-                                      style: {
-                                        fontSize: 12,
-                                        fontFamily: 'Roboto Flex',
-                                        color:
-                                          screenMode === 'dark'
-                                            ? '#fff'
-                                            : 'black',
-                                      },
-                                    },
-                                    gridLineColor: '#323546',
-                                    gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
-                                    tickLength: 40,
-                                    lineColor: '#e6d8d8', // Màu của đường kẻ axis
+                      //                 return tooltipContent;
+                      //               },
+                      //               useHTML: true,
+                      //             },
+                      //             xAxis: {
+                      //               categories: listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)
+                      //                 ?.map((itemHistory: any) => {
+                      //                   return moment
+                      //                     .unix(itemHistory?.update_time)
+                      //                     .format('HH:mm:ss');
+                      //                 }),
+                      //               labels: {
+                      //                 style: {
+                      //                   fontSize: 12,
+                      //                   fontFamily: 'Roboto Flex',
+                      //                   color:
+                      //                     screenMode === 'dark'
+                      //                       ? '#fff'
+                      //                       : 'black',
+                      //                 },
+                      //               },
+                      //               gridLineColor: '#323546',
+                      //               gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
+                      //               tickLength: 40,
+                      //               lineColor: '#e6d8d8', // Màu của đường kẻ axis
 
-                                    lineWidth: 0,
-                                    tickWidth: 0,
+                      //               lineWidth: 0,
+                      //               tickWidth: 0,
 
-                                    gridLineWidth: 0,
-                                    crosshair: {
-                                      color: 'gray',
-                                      width: 1,
-                                      zIndex: 5,
-                                    },
-                                  },
-                                  yAxis: [
-                                    {
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      axisLabel: {
-                                        formatter: function (value: number) {
-                                          if (value > 1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value < -1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value === 0) return 0;
-                                        },
-                                      },
-                                      title: {
-                                        text: null, // Loại bỏ tiêu đề "Values" trên trục y
-                                      },
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      labels: {
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                    {
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      opposite: true, // this will put it on the right side
-                                      title: {
-                                        text: null, // you can set your title here
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                      labels: {
-                                        formatter: function () {
-                                          return this.value + '%';
-                                        },
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                  ],
-                                  grid: {
-                                    left: 80,
-                                    right: 250,
-                                    top: 100,
-                                    bottom: 100,
-                                  },
-                                  series: [
-                                    {
-                                      name: 'Giá mua',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.buy_avg;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                    {
-                                      name: 'Giá bán',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.sell;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                  ],
-                                }}
-                              />
-                            )}
+                      //               gridLineWidth: 0,
+                      //               crosshair: {
+                      //                 color: 'gray',
+                      //                 width: 1,
+                      //                 zIndex: 5,
+                      //               },
+                      //             },
+                      //             yAxis: [
+                      //               {
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 axisLabel: {
+                      //                   formatter: function (value: number) {
+                      //                     if (value > 1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value < -1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value === 0) return 0;
+                      //                   },
+                      //                 },
+                      //                 title: {
+                      //                   text: null, // Loại bỏ tiêu đề "Values" trên trục y
+                      //                 },
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //               {
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 opposite: true, // this will put it on the right side
+                      //                 title: {
+                      //                   text: null, // you can set your title here
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   formatter: function () {
+                      //                     return this.value + '%';
+                      //                   },
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //             ],
+                      //             grid: {
+                      //               left: 80,
+                      //               right: 250,
+                      //               top: 100,
+                      //               bottom: 100,
+                      //             },
+                      //             series: [
+                      //               {
+                      //                 name: 'Giá mua',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.buy_avg;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //               {
+                      //                 name: 'Giá bán',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.sell;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //             ],
+                      //           }}
+                      //         />
+                      //       )}
 
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                marginTop: '8px',
-                                borderBottom:
-                                  screenMode === 'dark'
-                                    ? '1px solid #30323B'
-                                    : '1px solid #D5D7DC',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '96px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                  paddingLeft: '12px',
-                                }}
-                              >
-                                {moment
-                                  .unix(
-                                    listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)[0]?.update_time
-                                  )
-                                  .format('DD/MM/YYYY')}
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#5CD680'
-                                      : '#45783A',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá mua
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           marginTop: '8px',
+                      //           borderBottom:
+                      //             screenMode === 'dark'
+                      //               ? '1px solid #30323B'
+                      //               : '1px solid #D5D7DC',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '96px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //         >
+                      //           {moment
+                      //             .unix(
+                      //               listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)[0]?.update_time
+                      //             )
+                      //             .format('DD/MM/YYYY')}
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#5CD680'
+                      //                 : '#45783A',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá mua
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#D15449'
-                                      : '#A33929',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá bán
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#D15449'
+                      //                 : '#A33929',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá bán
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderBottom:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                            </div>
-                            <div>
-                              {listGiaVang
-                                ?.filter((itemHistory: any) => {
-                                  return (
-                                    item?.type_code === itemHistory?.type_code
-                                  );
-                                })
-                                ?.slice(1, 5)
-                                ?.map((itemHistory: any, index: number) => {
-                                  return (
-                                    <div
-                                      key={index}
-                                      style={{
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        alignItems: 'center',
+                      //             borderBottom:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //       <div>
+                      //         {listGiaVang
+                      //           ?.filter((itemHistory: any) => {
+                      //             return (
+                      //               item?.type_code === itemHistory?.type_code
+                      //             );
+                      //           })
+                      //           ?.slice(1, 5)
+                      //           ?.map((itemHistory: any, index: number) => {
+                      //             return (
+                      //               <div
+                      //                 key={index}
+                      //                 style={{
+                      //                   display: 'flex',
+                      //                   flexDirection: 'row',
+                      //                   alignItems: 'center',
 
-                                        borderBottom:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                        borderRight:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                      }}
-                                    >
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '700',
+                      //                   borderBottom:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                   borderRight:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                 }}
+                      //               >
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '700',
 
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          width: '96px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        <span
-                                          style={{
-                                            color: '#DDC230',
-                                          }}
-                                        >
-                                          {moment
-                                            .unix(itemHistory?.update_time)
-                                            .format('HH:mm:ss')}
-                                        </span>
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.buy)}
-                                        {itemHistory?.buy > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.alter_buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatNumber(itemHistory?.alter_buy)}
-                                        {itemHistory?.alter_buy > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.sell)}
-                                        {itemHistory?.sell > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     width: '96px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   <span
+                      //                     style={{
+                      //                       color: '#DDC230',
+                      //                     }}
+                      //                   >
+                      //                     {moment
+                      //                       .unix(itemHistory?.update_time)
+                      //                       .format('HH:mm:ss')}
+                      //                   </span>
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.buy)}
+                      //                   {itemHistory?.buy > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.alter_buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatNumber(itemHistory?.alter_buy)}
+                      //                   {itemHistory?.alter_buy > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.sell)}
+                      //                   {itemHistory?.sell > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
 
-                                          color:
-                                            itemHistory?.alter_sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
+                      //                     color:
+                      //                       itemHistory?.alter_sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
 
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(
-                                          itemHistory?.alter_sell
-                                        )}
-                                        {itemHistory?.alter_sell > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                    </div>
-                                  );
-                                })}
-                            </div>
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(
+                      //                     itemHistory?.alter_sell
+                      //                   )}
+                      //                   {itemHistory?.alter_sell > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //               </div>
+                      //             );
+                      //           })}
+                      //       </div>
 
-                            <div
-                              style={{
-                                fontSize: '14px',
-                                fontFamily: 'Roboto Flex',
-                                color:
-                                  screenMode === 'dark' ? '#99BAFF' : '#2E3138',
-                                fontWeight: '500',
-                                borderTop: '1px solid #30323B',
-                                paddingTop: '16px',
-                                marginTop: '16px',
-                              }}
-                            >
-                              THỐNG KÊ TRONG NGÀY{' '}
-                              {moment
-                                .unix(
-                                  listGiaVang
-                                    ?.filter((itemHistory: any) => {
-                                      return (
-                                        item?.type_code ===
-                                        itemHistory?.type_code
-                                      );
-                                    })
-                                    ?.slice(1, 5)[0]?.update_time
-                                )
-                                .format('DD/MM/YYYY')}
-                            </div>
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                gap: '43px',
-                                justifyContent: 'space-around',
-                                borderRadius: '4px',
-                                border: '1px solid #30323B',
-                                height: '52px',
-                                alignItems: 'center',
-                                marginTop: '4px',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                }}
-                              >
-                                Thấp nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_min)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '120px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Cao nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_max)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '200px',
-                                }}
-                              >
-                                Trung bình:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_avg)}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      }
+                      //       <div
+                      //         style={{
+                      //           fontSize: '14px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           color:
+                      //             screenMode === 'dark' ? '#99BAFF' : '#2E3138',
+                      //           fontWeight: '500',
+                      //           borderTop: '1px solid #30323B',
+                      //           paddingTop: '16px',
+                      //           marginTop: '16px',
+                      //         }}
+                      //       >
+                      //         THỐNG KÊ TRONG NGÀY{' '}
+                      //         {moment
+                      //           .unix(
+                      //             listGiaVang
+                      //               ?.filter((itemHistory: any) => {
+                      //                 return (
+                      //                   item?.type_code ===
+                      //                   itemHistory?.type_code
+                      //                 );
+                      //               })
+                      //               ?.slice(1, 5)[0]?.update_time
+                      //           )
+                      //           .format('DD/MM/YYYY')}
+                      //       </div>
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           gap: '43px',
+                      //           justifyContent: 'space-around',
+                      //           borderRadius: '4px',
+                      //           border: '1px solid #30323B',
+                      //           height: '52px',
+                      //           alignItems: 'center',
+                      //           marginTop: '4px',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //           }}
+                      //         >
+                      //           Thấp nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_min)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '120px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Cao nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_max)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '200px',
+                      //           }}
+                      //         >
+                      //           Trung bình:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_avg)}
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //     </div>
+                      //   </div>
+                      // }
                     >
                       <div
                         key={index}
@@ -11701,798 +11701,798 @@ const HangHoa: FC = ({
                         backgroundColor: 'transparent', // Optional: remove background color if needed
                       }}
                       style={{ overflow: 'hidden' }}
-                      title={
-                        <div
-                          id="dhtmltooltip"
-                          style={{
-                            left: '-800px',
-                            top: '1659px',
-                            overflow: 'hidden',
-                            backgroundColor:
-                              screenMode === 'dark' ? '#25262D' : '#FFFFFF',
-                            // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
-                          }}
-                        >
-                          <div
-                            style={{
-                              width: '500px',
-                              overflow: 'hidden',
-                              padding: '16px',
-                              // border: '1px solid #197fbf',
-                              borderRadius: '3px',
-                            }}
-                          >
-                            <div
-                              style={{
-                                fontSize: '16px',
-                                fontFamily: 'Roboto Flex',
-                                fontWeight: '600',
-                                textAlign: 'center',
-                                color: '#FFFFFF',
-                              }}
-                            >
-                              Lịch sử biến động giá mua/bán{' '}
-                              {LIST_MAP_GOLD_NAME[item?.type_code]}
-                            </div>
-                            {listGiaVang
-                              ?.filter((itemHistory: any) => {
-                                return (
-                                  item?.type_code === itemHistory?.type_code
-                                );
-                              })
-                              ?.slice(1, 5)
-                              ?.map((itemHistory: any) => {
-                                const timeGold = moment
-                                  .unix(itemHistory?.update_time)
-                                  .format('HH:mm:ss');
-                              }) && (
-                              <HighchartsReact
-                                highcharts={Highcharts}
-                                options={{
-                                  chart: {
-                                    type: 'column',
-                                    backgroundColor:
-                                      screenMode === 'dark'
-                                        ? '#25262D'
-                                        : '#FDFDFD',
+                      // title={
+                      //   <div
+                      //     id="dhtmltooltip"
+                      //     style={{
+                      //       left: '-800px',
+                      //       top: '1659px',
+                      //       overflow: 'hidden',
+                      //       backgroundColor:
+                      //         screenMode === 'dark' ? '#25262D' : '#FFFFFF',
+                      //       // boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.5)',
+                      //     }}
+                      //   >
+                      //     <div
+                      //       style={{
+                      //         width: '500px',
+                      //         overflow: 'hidden',
+                      //         padding: '16px',
+                      //         // border: '1px solid #197fbf',
+                      //         borderRadius: '3px',
+                      //       }}
+                      //     >
+                      //       <div
+                      //         style={{
+                      //           fontSize: '16px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           fontWeight: '600',
+                      //           textAlign: 'center',
+                      //           color: '#FFFFFF',
+                      //         }}
+                      //       >
+                      //         Lịch sử biến động giá mua/bán{' '}
+                      //         {LIST_MAP_GOLD_NAME[item?.type_code]}
+                      //       </div>
+                      //       {listGiaVang
+                      //         ?.filter((itemHistory: any) => {
+                      //           return (
+                      //             item?.type_code === itemHistory?.type_code
+                      //           );
+                      //         })
+                      //         ?.slice(1, 5)
+                      //         ?.map((itemHistory: any) => {
+                      //           const timeGold = moment
+                      //             .unix(itemHistory?.update_time)
+                      //             .format('HH:mm:ss');
+                      //         }) && (
+                      //         <HighchartsReact
+                      //           highcharts={Highcharts}
+                      //           options={{
+                      //             chart: {
+                      //               type: 'column',
+                      //               backgroundColor:
+                      //                 screenMode === 'dark'
+                      //                   ? '#25262D'
+                      //                   : '#FDFDFD',
 
-                                    style: {
-                                      color: '#fff',
-                                    },
-                                    borderRadius: 8,
-                                    width: 500,
-                                    marginTop: 40,
-                                    marginLeft: 70,
-                                    marginBottom: 107,
-                                    height: 308,
-                                  },
-                                  credits: {
-                                    enabled: false, // Loại bỏ chữ "Highcharts.com"
-                                  },
-                                  title: {
-                                    text: null,
-                                    style: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                  },
-                                  colors: [
-                                    '#B28221',
-                                    '#43F3FF',
-                                    '#597BF8',
-                                    '#30DF9D',
-                                    '#FF36F5',
-                                    '#FFD097',
-                                    '#EF5E76',
-                                    '#FFF92F',
-                                  ],
-                                  legend: {
-                                    align: 'left',
-                                    verticalAlign: 'bottom',
-                                    layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
-                                    itemStyle: {
-                                      color:
-                                        screenMode === 'dark'
-                                          ? '#fff'
-                                          : 'black',
-                                    },
-                                    minHeight: 70,
-                                    maxWidth: 500,
-                                    y: 20,
+                      //               style: {
+                      //                 color: '#fff',
+                      //               },
+                      //               borderRadius: 8,
+                      //               width: 500,
+                      //               marginTop: 40,
+                      //               marginLeft: 70,
+                      //               marginBottom: 107,
+                      //               height: 308,
+                      //             },
+                      //             credits: {
+                      //               enabled: false, // Loại bỏ chữ "Highcharts.com"
+                      //             },
+                      //             title: {
+                      //               text: null,
+                      //               style: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //             },
+                      //             colors: [
+                      //               '#B28221',
+                      //               '#43F3FF',
+                      //               '#597BF8',
+                      //               '#30DF9D',
+                      //               '#FF36F5',
+                      //               '#FFD097',
+                      //               '#EF5E76',
+                      //               '#FFF92F',
+                      //             ],
+                      //             legend: {
+                      //               align: 'left',
+                      //               verticalAlign: 'bottom',
+                      //               layout: 'horizontal', // Đặt layout là horizontal để legend hiển thị theo hàng ngang
+                      //               itemStyle: {
+                      //                 color:
+                      //                   screenMode === 'dark'
+                      //                     ? '#fff'
+                      //                     : 'black',
+                      //               },
+                      //               minHeight: 70,
+                      //               maxWidth: 500,
+                      //               y: 20,
 
-                                    navigation: {
-                                      verticalAlign: 'left',
-                                    },
-                                  },
-                                  plotOptions: {
-                                    column: {
-                                      stacking: 'normal',
-                                      dataLabels: {
-                                        enabled: false,
-                                      },
-                                      borderRadius: 0,
-                                      borderWidth: 0,
-                                    },
-                                  },
-                                  tooltip: {
-                                    formatter: function () {
-                                      let tooltipContent = `<b>${this.x}</b><br/>`;
+                      //               navigation: {
+                      //                 verticalAlign: 'left',
+                      //               },
+                      //             },
+                      //             plotOptions: {
+                      //               column: {
+                      //                 stacking: 'normal',
+                      //                 dataLabels: {
+                      //                   enabled: false,
+                      //                 },
+                      //                 borderRadius: 0,
+                      //                 borderWidth: 0,
+                      //               },
+                      //             },
+                      //             tooltip: {
+                      //               formatter: function () {
+                      //                 let tooltipContent = `<b>${this.x}</b><br/>`;
 
-                                      tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
+                      //                 tooltipContent += `${this.series.name}: <b>${this.y}</b>`;
 
-                                      return tooltipContent;
-                                    },
-                                    useHTML: true,
-                                  },
-                                  xAxis: {
-                                    categories: listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)
-                                      ?.map((itemHistory: any) => {
-                                        return moment
-                                          .unix(itemHistory?.update_time)
-                                          .format('HH:mm:ss');
-                                      }),
-                                    labels: {
-                                      style: {
-                                        fontSize: 12,
-                                        fontFamily: 'Roboto Flex',
-                                        color:
-                                          screenMode === 'dark'
-                                            ? '#fff'
-                                            : 'black',
-                                      },
-                                    },
-                                    gridLineColor: '#323546',
-                                    gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
-                                    tickLength: 40,
-                                    lineColor: '#e6d8d8', // Màu của đường kẻ axis
+                      //                 return tooltipContent;
+                      //               },
+                      //               useHTML: true,
+                      //             },
+                      //             xAxis: {
+                      //               categories: listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)
+                      //                 ?.map((itemHistory: any) => {
+                      //                   return moment
+                      //                     .unix(itemHistory?.update_time)
+                      //                     .format('HH:mm:ss');
+                      //                 }),
+                      //               labels: {
+                      //                 style: {
+                      //                   fontSize: 12,
+                      //                   fontFamily: 'Roboto Flex',
+                      //                   color:
+                      //                     screenMode === 'dark'
+                      //                       ? '#fff'
+                      //                       : 'black',
+                      //                 },
+                      //               },
+                      //               gridLineColor: '#323546',
+                      //               gridLineDashStyle: 'dot', // Hiệu ứng dấu chấm cho đường grid
+                      //               tickLength: 40,
+                      //               lineColor: '#e6d8d8', // Màu của đường kẻ axis
 
-                                    lineWidth: 0,
-                                    tickWidth: 0,
+                      //               lineWidth: 0,
+                      //               tickWidth: 0,
 
-                                    gridLineWidth: 0,
-                                    crosshair: {
-                                      color: 'gray',
-                                      width: 1,
-                                      zIndex: 5,
-                                    },
-                                  },
-                                  yAxis: [
-                                    {
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      axisLabel: {
-                                        formatter: function (value: number) {
-                                          if (value > 1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value < -1000000000) {
-                                            return value / 1000000000 + ' tỷ';
-                                          }
-                                          if (value === 0) return 0;
-                                        },
-                                      },
-                                      title: {
-                                        text: null, // Loại bỏ tiêu đề "Values" trên trục y
-                                      },
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      labels: {
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                    {
-                                      gridLineColor: '#323546',
-                                      gridLineDashStyle: 'dot',
-                                      splitLine: {
-                                        lineStyle: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? 'rgba(58, 63, 66, 0.5)'
-                                              : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
-                                          dashStyle: 'dot', // đặt dashStyle thành dấu chấm
-                                        },
-                                      },
-                                      crosshair: {
-                                        dashStyle: 'dash',
-                                        width: 1,
-                                        color: 'gray',
-                                        zIndex: 5,
-                                      },
-                                      opposite: true, // this will put it on the right side
-                                      title: {
-                                        text: null, // you can set your title here
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                      labels: {
-                                        formatter: function () {
-                                          return this.value + '%';
-                                        },
-                                        style: {
-                                          color:
-                                            screenMode === 'dark'
-                                              ? '#fff'
-                                              : 'black',
-                                        },
-                                      },
-                                    },
-                                  ],
-                                  grid: {
-                                    left: 80,
-                                    right: 250,
-                                    top: 100,
-                                    bottom: 100,
-                                  },
-                                  series: [
-                                    {
-                                      name: 'Giá mua',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.buy_avg;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                    {
-                                      name: 'Giá bán',
-                                      data: listGiaVang
-                                        ?.filter((itemHistory: any) => {
-                                          return (
-                                            item?.type_code ===
-                                            itemHistory?.type_code
-                                          );
-                                        })
-                                        ?.slice(1, 5)
-                                        ?.map((itemHistory: any) => {
-                                          return itemHistory.sell;
-                                        }),
-                                      type: 'spline',
-                                      marker: {
-                                        enabled: false, // This will remove the dots on the line
-                                      },
-                                    },
-                                  ],
-                                }}
-                              />
-                            )}
+                      //               gridLineWidth: 0,
+                      //               crosshair: {
+                      //                 color: 'gray',
+                      //                 width: 1,
+                      //                 zIndex: 5,
+                      //               },
+                      //             },
+                      //             yAxis: [
+                      //               {
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 axisLabel: {
+                      //                   formatter: function (value: number) {
+                      //                     if (value > 1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value < -1000000000) {
+                      //                       return value / 1000000000 + ' tỷ';
+                      //                     }
+                      //                     if (value === 0) return 0;
+                      //                   },
+                      //                 },
+                      //                 title: {
+                      //                   text: null, // Loại bỏ tiêu đề "Values" trên trục y
+                      //                 },
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //               {
+                      //                 gridLineColor: '#323546',
+                      //                 gridLineDashStyle: 'dot',
+                      //                 splitLine: {
+                      //                   lineStyle: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? 'rgba(58, 63, 66, 0.5)'
+                      //                         : 'rgba(240, 243, 250, 0.5)', // làm mờ màu của splitLine
+                      //                     dashStyle: 'dot', // đặt dashStyle thành dấu chấm
+                      //                   },
+                      //                 },
+                      //                 crosshair: {
+                      //                   dashStyle: 'dash',
+                      //                   width: 1,
+                      //                   color: 'gray',
+                      //                   zIndex: 5,
+                      //                 },
+                      //                 opposite: true, // this will put it on the right side
+                      //                 title: {
+                      //                   text: null, // you can set your title here
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //                 labels: {
+                      //                   formatter: function () {
+                      //                     return this.value + '%';
+                      //                   },
+                      //                   style: {
+                      //                     color:
+                      //                       screenMode === 'dark'
+                      //                         ? '#fff'
+                      //                         : 'black',
+                      //                   },
+                      //                 },
+                      //               },
+                      //             ],
+                      //             grid: {
+                      //               left: 80,
+                      //               right: 250,
+                      //               top: 100,
+                      //               bottom: 100,
+                      //             },
+                      //             series: [
+                      //               {
+                      //                 name: 'Giá mua',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.buy_avg;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //               {
+                      //                 name: 'Giá bán',
+                      //                 data: listGiaVang
+                      //                   ?.filter((itemHistory: any) => {
+                      //                     return (
+                      //                       item?.type_code ===
+                      //                       itemHistory?.type_code
+                      //                     );
+                      //                   })
+                      //                   ?.slice(1, 5)
+                      //                   ?.map((itemHistory: any) => {
+                      //                     return itemHistory.sell;
+                      //                   }),
+                      //                 type: 'spline',
+                      //                 marker: {
+                      //                   enabled: false, // This will remove the dots on the line
+                      //                 },
+                      //               },
+                      //             ],
+                      //           }}
+                      //         />
+                      //       )}
 
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                marginTop: '8px',
-                                borderBottom:
-                                  screenMode === 'dark'
-                                    ? '1px solid #30323B'
-                                    : '1px solid #D5D7DC',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '96px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                  paddingLeft: '12px',
-                                }}
-                              >
-                                {moment
-                                  .unix(
-                                    listGiaVang
-                                      ?.filter((itemHistory: any) => {
-                                        return (
-                                          item?.type_code ===
-                                          itemHistory?.type_code
-                                        );
-                                      })
-                                      ?.slice(1, 5)[0]?.update_time
-                                  )
-                                  .format('DD/MM/YYYY')}
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#5CD680'
-                                      : '#45783A',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá mua
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           marginTop: '8px',
+                      //           borderBottom:
+                      //             screenMode === 'dark'
+                      //               ? '1px solid #30323B'
+                      //               : '1px solid #D5D7DC',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '96px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //         >
+                      //           {moment
+                      //             .unix(
+                      //               listGiaVang
+                      //                 ?.filter((itemHistory: any) => {
+                      //                   return (
+                      //                     item?.type_code ===
+                      //                     itemHistory?.type_code
+                      //                   );
+                      //                 })
+                      //                 ?.slice(1, 5)[0]?.update_time
+                      //             )
+                      //             .format('DD/MM/YYYY')}
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#5CD680'
+                      //                 : '#45783A',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá mua
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderRight:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  // color:
-                                  //   screenMode === 'dark'
-                                  //     ? '#818498'
-                                  //     : '#66676B',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#D15449'
-                                      : '#A33929',
-                                  width: '83px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Giá bán
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  width: '93px',
-                                  height: '40px',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  paddingLeft: '12px',
+                      //             borderRight:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             // color:
+                      //             //   screenMode === 'dark'
+                      //             //     ? '#818498'
+                      //             //     : '#66676B',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#D15449'
+                      //                 : '#A33929',
+                      //             width: '83px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Giá bán
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             width: '93px',
+                      //             height: '40px',
+                      //             display: 'flex',
+                      //             alignItems: 'center',
+                      //             paddingLeft: '12px',
 
-                                  borderBottom:
-                                    screenMode === 'dark'
-                                      ? '1px solid #30323B'
-                                      : '1px solid #D5D7DC',
-                                }}
-                                className="vung1Header"
-                              >
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#5CD680'
-                                        : '#45783A',
-                                  }}
-                                >
-                                  Tăng
-                                </span>
-                                /
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#D15449'
-                                        : '#A33929',
-                                  }}
-                                >
-                                  Giảm
-                                </span>
-                              </div>
-                            </div>
-                            <div>
-                              {listGiaVang
-                                ?.filter((itemHistory: any) => {
-                                  return (
-                                    item?.type_code === itemHistory?.type_code
-                                  );
-                                })
-                                ?.slice(1, 5)
-                                ?.map((itemHistory: any, index: number) => {
-                                  return (
-                                    <div
-                                      key={index}
-                                      style={{
-                                        display: 'flex',
-                                        flexDirection: 'row',
-                                        alignItems: 'center',
+                      //             borderBottom:
+                      //               screenMode === 'dark'
+                      //                 ? '1px solid #30323B'
+                      //                 : '1px solid #D5D7DC',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#5CD680'
+                      //                   : '#45783A',
+                      //             }}
+                      //           >
+                      //             Tăng
+                      //           </span>
+                      //           /
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#D15449'
+                      //                   : '#A33929',
+                      //             }}
+                      //           >
+                      //             Giảm
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //       <div>
+                      //         {listGiaVang
+                      //           ?.filter((itemHistory: any) => {
+                      //             return (
+                      //               item?.type_code === itemHistory?.type_code
+                      //             );
+                      //           })
+                      //           ?.slice(1, 5)
+                      //           ?.map((itemHistory: any, index: number) => {
+                      //             return (
+                      //               <div
+                      //                 key={index}
+                      //                 style={{
+                      //                   display: 'flex',
+                      //                   flexDirection: 'row',
+                      //                   alignItems: 'center',
 
-                                        borderBottom:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                        borderRight:
-                                          screenMode === 'dark'
-                                            ? '1px solid #30323B'
-                                            : '1px solid #D5D7DC',
-                                      }}
-                                    >
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '700',
+                      //                   borderBottom:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                   borderRight:
+                      //                     screenMode === 'dark'
+                      //                       ? '1px solid #30323B'
+                      //                       : '1px solid #D5D7DC',
+                      //                 }}
+                      //               >
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '700',
 
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          width: '96px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        <span
-                                          style={{
-                                            color: '#DDC230',
-                                          }}
-                                        >
-                                          {moment
-                                            .unix(itemHistory?.update_time)
-                                            .format('HH:mm:ss')}
-                                        </span>
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.buy)}
-                                        {itemHistory?.buy > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.alter_buy > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatNumber(itemHistory?.alter_buy)}
-                                        {itemHistory?.alter_buy > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
-                                          borderRight:
-                                            screenMode === 'dark'
-                                              ? '1px solid #30323B'
-                                              : '1px solid #D5D7DC',
-                                          color:
-                                            itemHistory?.sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '83px',
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(itemHistory?.sell)}
-                                        {itemHistory?.sell > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                      <div
-                                        style={{
-                                          fontFamily: 'Roboto Flex',
-                                          fontWeight: '400',
-                                          fontSize: '14px',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     width: '96px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   <span
+                      //                     style={{
+                      //                       color: '#DDC230',
+                      //                     }}
+                      //                   >
+                      //                     {moment
+                      //                       .unix(itemHistory?.update_time)
+                      //                       .format('HH:mm:ss')}
+                      //                   </span>
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.buy)}
+                      //                   {itemHistory?.buy > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.alter_buy > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatNumber(itemHistory?.alter_buy)}
+                      //                   {itemHistory?.alter_buy > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
+                      //                     borderRight:
+                      //                       screenMode === 'dark'
+                      //                         ? '1px solid #30323B'
+                      //                         : '1px solid #D5D7DC',
+                      //                     color:
+                      //                       itemHistory?.sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '83px',
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(itemHistory?.sell)}
+                      //                   {itemHistory?.sell > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //                 <div
+                      //                   style={{
+                      //                     fontFamily: 'Roboto Flex',
+                      //                     fontWeight: '400',
+                      //                     fontSize: '14px',
 
-                                          color:
-                                            itemHistory?.alter_sell > 0
-                                              ? '#5CD680'
-                                              : '#D15449',
-                                          width: '93px',
-                                          height: '40px',
-                                          alignItems: 'center',
-                                          display: 'flex',
+                      //                     color:
+                      //                       itemHistory?.alter_sell > 0
+                      //                         ? '#5CD680'
+                      //                         : '#D15449',
+                      //                     width: '93px',
+                      //                     height: '40px',
+                      //                     alignItems: 'center',
+                      //                     display: 'flex',
 
-                                          paddingLeft: '12px',
-                                        }}
-                                      >
-                                        {formatGoldPrice(
-                                          itemHistory?.alter_sell
-                                        )}
-                                        {itemHistory?.alter_sell > 0 ? (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_up_green}
-                                          />
-                                        ) : (
-                                          <img
-                                            style={{ padding: '6px' }}
-                                            src={arrow_down_red}
-                                          />
-                                        )}
-                                      </div>
-                                    </div>
-                                  );
-                                })}
-                            </div>
+                      //                     paddingLeft: '12px',
+                      //                   }}
+                      //                 >
+                      //                   {formatGoldPrice(
+                      //                     itemHistory?.alter_sell
+                      //                   )}
+                      //                   {itemHistory?.alter_sell > 0 ? (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_up_green}
+                      //                     />
+                      //                   ) : (
+                      //                     <img
+                      //                       style={{ padding: '6px' }}
+                      //                       src={arrow_down_red}
+                      //                     />
+                      //                   )}
+                      //                 </div>
+                      //               </div>
+                      //             );
+                      //           })}
+                      //       </div>
 
-                            <div
-                              style={{
-                                fontSize: '14px',
-                                fontFamily: 'Roboto Flex',
-                                color:
-                                  screenMode === 'dark' ? '#99BAFF' : '#2E3138',
-                                fontWeight: '500',
-                                borderTop: '1px solid #30323B',
-                                paddingTop: '16px',
-                                marginTop: '16px',
-                              }}
-                            >
-                              THỐNG KÊ TRONG NGÀY{' '}
-                              {moment
-                                .unix(
-                                  listGiaVang
-                                    ?.filter((itemHistory: any) => {
-                                      return (
-                                        item?.type_code ===
-                                        itemHistory?.type_code
-                                      );
-                                    })
-                                    ?.slice(1, 5)[0]?.update_time
-                                )
-                                .format('DD/MM/YYYY')}
-                            </div>
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                gap: '43px',
-                                justifyContent: 'space-around',
-                                borderRadius: '4px',
-                                border: '1px solid #30323B',
-                                height: '52px',
-                                alignItems: 'center',
-                                marginTop: '4px',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                }}
-                              >
-                                Thấp nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_min)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '120px',
-                                }}
-                                className="vung1Header"
-                              >
-                                Cao nhất:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_max)}
-                                </span>
-                              </div>
-                              <div
-                                style={{
-                                  fontFamily: 'Roboto Flex',
-                                  fontWeight: '500',
-                                  fontSize: '14px',
-                                  color:
-                                    screenMode === 'dark'
-                                      ? '#818498'
-                                      : '#66676B',
-                                  // width: '200px',
-                                }}
-                              >
-                                Trung bình:
-                                <span
-                                  style={{
-                                    color:
-                                      screenMode === 'dark'
-                                        ? '#fff'
-                                        : '#2E3138',
-                                    fontSize: '14px',
-                                    fontWeight: '400',
-                                    fontFamily: 'Roboto Flex',
-                                  }}
-                                >
-                                  {' '}
-                                  {formatGoldPrice(item?.buy_avg)}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      }
+                      //       <div
+                      //         style={{
+                      //           fontSize: '14px',
+                      //           fontFamily: 'Roboto Flex',
+                      //           color:
+                      //             screenMode === 'dark' ? '#99BAFF' : '#2E3138',
+                      //           fontWeight: '500',
+                      //           borderTop: '1px solid #30323B',
+                      //           paddingTop: '16px',
+                      //           marginTop: '16px',
+                      //         }}
+                      //       >
+                      //         THỐNG KÊ TRONG NGÀY{' '}
+                      //         {moment
+                      //           .unix(
+                      //             listGiaVang
+                      //               ?.filter((itemHistory: any) => {
+                      //                 return (
+                      //                   item?.type_code ===
+                      //                   itemHistory?.type_code
+                      //                 );
+                      //               })
+                      //               ?.slice(1, 5)[0]?.update_time
+                      //           )
+                      //           .format('DD/MM/YYYY')}
+                      //       </div>
+                      //       <div
+                      //         style={{
+                      //           display: 'flex',
+                      //           flexDirection: 'row',
+                      //           gap: '43px',
+                      //           justifyContent: 'space-around',
+                      //           borderRadius: '4px',
+                      //           border: '1px solid #30323B',
+                      //           height: '52px',
+                      //           alignItems: 'center',
+                      //           marginTop: '4px',
+                      //         }}
+                      //       >
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //           }}
+                      //         >
+                      //           Thấp nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_min)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '120px',
+                      //           }}
+                      //           className="vung1Header"
+                      //         >
+                      //           Cao nhất:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_max)}
+                      //           </span>
+                      //         </div>
+                      //         <div
+                      //           style={{
+                      //             fontFamily: 'Roboto Flex',
+                      //             fontWeight: '500',
+                      //             fontSize: '14px',
+                      //             color:
+                      //               screenMode === 'dark'
+                      //                 ? '#818498'
+                      //                 : '#66676B',
+                      //             // width: '200px',
+                      //           }}
+                      //         >
+                      //           Trung bình:
+                      //           <span
+                      //             style={{
+                      //               color:
+                      //                 screenMode === 'dark'
+                      //                   ? '#fff'
+                      //                   : '#2E3138',
+                      //               fontSize: '14px',
+                      //               fontWeight: '400',
+                      //               fontFamily: 'Roboto Flex',
+                      //             }}
+                      //           >
+                      //             {' '}
+                      //             {formatGoldPrice(item?.buy_avg)}
+                      //           </span>
+                      //         </div>
+                      //       </div>
+                      //     </div>
+                      //   </div>
+                      // }
                     >
                       <div
                         key={index}

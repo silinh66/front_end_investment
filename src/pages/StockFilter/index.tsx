@@ -5801,7 +5801,22 @@ const StockFilter: FC = (
   const onSaveSignal = () => {
     const savedChart = localStorage.getItem('myChartDataFilter');
     if (savedChart) {
-      const chartObj = JSON.parse(savedChart);
+      let obj = JSON.parse(savedChart);
+      const listSource = obj?.charts[0]?.panes[0]?.sources;
+      let curMainSeries = listSource?.find(
+        (item) => item?.type === 'MainSeries'
+      );
+      let curSymbol = curMainSeries?.state?.symbol;
+      let trendingLine = listSource.filter((item) => {
+        return (
+          (item.type === 'LineToolTrendLine' &&
+            //symbol = latestCurTab?.symbol
+            item.state.symbol === curSymbol) ||
+          item.state.symbol === `HOSE:${curSymbol}`
+        );
+      });
+      obj.charts[0].panes[0].sources = trendingLine;
+      const saveChartFilter = JSON.stringify(obj);
       axios
         .post(
           `${config.app.VITE_APP_API_URL}/signals/add`,
@@ -5809,7 +5824,8 @@ const StockFilter: FC = (
             ownerId: user?.userID,
             symbol: curTab?.symbol,
             signalName: `Tín hiệu ${curTab?.symbol}`,
-            signalInfo: savedChart,
+            signalInfo: saveChartFilter,
+            // signalInfo: savedChart,
           },
           {
             headers: {
@@ -6053,104 +6069,6 @@ const StockFilter: FC = (
       };
     }
   }
-
-  const options = {
-    tooltip: {
-      trigger: 'item',
-      axisPointer: {
-        type: 'shadow',
-      },
-      // trigger: "item",
-      // responsive: true,
-      // position: "top",
-      //   position: function (point) {
-      //     return [point[0], '20%'];
-      //     // if u wanna center it to the line, then u could do something like
-      //     // [point[0] - width_of_tooltip / 2, '20%']
-      // },
-      // formatter: "{c}",
-      formatter: function (params: any) {
-        // return !!params[0]?.name
-        //   ? `<div style="position: absolute;  border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px sans-serif; padding: 5px; left: 0px; top: 0px; pointer-events: none;">Mức giá: ${
-        //       params[0]?.name
-        //     }<br>Tổng KL: ${(params[0]?.data?.value * 1000).toLocaleString(
-        //       'en-US'
-        //     )}</div>`
-        //   : null;
-        let type = '';
-        switch (params?.color) {
-          case '#42A732':
-            type = 'Mua chủ động';
-            break;
-          case '#E43637':
-            type = 'Bán chủ động';
-            break;
-          case '#CCAA00':
-            type = 'ATO';
-            break;
-          default:
-            type = 'ATC';
-        }
-        return `<div style="position: absolute;  border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px / 21px sans-serif; padding: 5px; left: 0px; top: 0px; pointer-events: none;"><span style="font-weight: bold">${type}</span>: ${formatNumber(params?.data?.value)} </div>`;
-      },
-      backgroundColor: 'transparent',
-      // borderColor: "#c8e2f7",
-      borderWidth: '0',
-      // textStyle: {
-      //   color: "#5d6f80",
-      // },
-    },
-    grid: {
-      containLabel: true,
-      left: '3%',
-      right: '7%',
-      top: '2%',
-      bottom: 0,
-    },
-    xAxis: {
-      type: 'value',
-      axisTick: {
-        show: false,
-      },
-      axisLabel: {
-        formatter: function (value) {
-          // Chuyển đổi giá trị thành chuỗi và loại bỏ dấu phẩy
-          // Ví dụ: 1000K thay vì 1,000K
-          return formatNumber(value);
-        },
-        align: 'center',
-        color: screenMode === 'dark' ? '#C8C3BC' : 'black',
-        fontSize: '11px',
-      },
-      position: 'top',
-      axisLine: {
-        show: false,
-      },
-      splitLine: {
-        lineStyle: {
-          type: 'dashed',
-          width: 1,
-          color: screenMode === 'dark' ? '#8b8b8b' : '#e7e7e7',
-        },
-      },
-    },
-
-    yAxis: {
-      type: 'category',
-      data: yAxisDataMap,
-      axisTick: {
-        show: false,
-      },
-      axisLine: {
-        show: false,
-      },
-      axisLabel: {
-        color: screenMode === 'dark' ? '#fff' : 'black',
-      },
-    },
-    series: series,
-    // barCategoryGap: "20%", // Distance between bars in the same category
-  };
 
   const emphasisStyle = {
     itemStyle: {
