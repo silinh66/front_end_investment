@@ -1,0 +1,42 @@
+[
+  {
+    "value": [818284000, null, null],
+    "name": "Tài chính",
+    "id": "branch-34",
+    "discretion": null,
+    "children": [
+      {
+        "value": [408041000, 98120000, 1.48925634925324],
+        "name": "VNM",
+        "id": "leaf-531",
+        "discretion": "mandatory"
+      },
+      {
+        "value": [408041000, 4812000,7.48925634925324],
+        "name": "ACB",
+        "id": "leaf-530",
+        "discretion": "discretionary"
+      }
+    ]
+  },
+  {
+    "value": [818284000, null, null],
+    "name": "Công nghiệp",
+    "id": "branch-34",
+    "discretion": null,
+    "children": [
+      {
+        "value": [608041000, 44812000, 4.48925634925324],
+        "name": "DIG",
+        "id": "leaf-531",
+        "discretion": "mandatory"
+      },
+      {
+        "value": [408041000, 24481200, 2.48925634925324],
+        "name": "PVS",
+        "id": "leaf-530",
+        "discretion": "discretionary"
+      }
+    ]
+  }
+]
